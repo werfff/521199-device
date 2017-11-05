@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Artur Hovannisyan](https://up.htmlacademy.ru/htmlcss/19/user/521199).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Мирзоян](https://up.htmlacademy.ru/htmlcss/19/user/302093).
 
 ---
 
