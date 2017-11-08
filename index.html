@@ -5,8 +5,194 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
+       <img src="http://placehold.it/150x100" width="111" height="24" alt="Логотип Интернет Магазина «DEVICE»">
+      </a>
+      <form class="main-form">
+       <p>
+         <img src="">
+         <input type="search" name="search" placeholder="Поиск по сайту">
+         <input type="submit" value="Найти">
+       </p>
+       <p>
+         <img src="">
+         <input type="login" name="login" placeholder="Войти">
+         <input type="submit" value="Войти">
+       </p>
+      </form>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+      <img src="http://placehold.it/150x100" width="10" height="10">
 
+      <p class="compare"><a class="button compare-button" href="compare.html">Сравнить</a></p>
+
+      <img src="http://placehold.it/150x100" width="10" height="10">
+
+      <p class="basket"><a class="button basket-button" href="basket.html">Корзина</a></p>
+
+      <span class="site-catalog">
+        <p><a href="catalog.html">Каталог товаров</a></p>          <!--как??-->
+      </span>
+
+      <img src="http://placehold.it/150x100" width="10" height="10">
+
+      <ul class="site-navigation">
+        <li class="deliver"><a href="deliver.html">Доставка</a></li>
+        <li class="garant"><a href="garant.html">Гарантия</a></li>
+        <li class="contacts"><a href="contacts.html">Контакты</a></li>
+      </ul>
+     </nav>
+    </header>
+    <main>
+      <section class="showcase">
+        <div class="slideshow-container">
+          <div class="products">
+            <ul class="slides">
+              <img src="http://placehold.it/150x100" alt="Селфи палка ......." href="product1.html" width="300px" height="300px">
+              <h1 class="name-item">
+                Делай селфи,01<br>
+                как Бен Стиллгер!
+              </h1>
+              <p class="about-item">
+                Самая длинная палка для селфи доступная в насшем магазине.<br>
+                Восемь (Восемь, Карл) метров длиной и весом всего 5 килограмм.
+              </p>
+              <a href="product1.html">Подробнее</a>
+              <form class="radio">
+                <input type="radio" name="product" checked></input>
+                <input type="radio" name="product"></input>
+                <input type="radio" name="product"></input>
+              </form>
+            </ul>
+            <table class="info">
+              <tr>
+                <td>8,5 М</td>
+                <td>5 КГ</td>
+                <td>Карбон</td>
+              </tr>
+              <tr>
+                <td><small>Длина палки</small></td>
+                <td><small>Вес палки</small></td>
+                <td><small>Материал палки</small></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="products">
+            <ul class="slides">
+              <img src="http://placehold.it/150x100" alt="Селфи палка ......." href="product1.html" width="300px" height="300px">
+              <h1 class="name-item">
+                Худеем02<br>
+                правильно!
+              </h1>
+              <p class="about-item">
+                Мотивирующий фитнес-браслеты помогут найти в себе силы<br>
+                не пропускать занятия и соблюдать диету.
+              </p>
+              <a href="product1.html">Подробнее</a>
+              <form class="radio">
+                <input type="radio" name="product"></input>
+                <input type="radio" name="product" checked></input>
+                <input type="radio" name="product"></input>
+              </form>
+            </ul>
+            <table class="info">
+              <tr>
+                <td>48 часов</td>
+              </tr>
+              <tr>
+                <td><small>Без подзорядки</small></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="products">
+            <ul class="slides">
+              <img src="http://placehold.it/150x100" alt="Селфи палка ......." href="product1.html" width="300px" height="300px">
+              <h1 class="name-item">
+                Делай селфи,<br> <!--здесь продолжить-->
+                как Бен Стиллгер!
+              </h1>
+              <p class="about-item">
+                Самая длинная палка для селфи доступная в насшем магазине.<br>
+                Восемь (Восемь, Карл) метров длиной и весом всего 5 килограмм.
+              </p>
+              <a href="product1.html">Подробнее</a>
+              <form class="radio">
+                <input type="radio" name="product"></input>
+                <input type="radio" name="product"></input>
+                <input type="radio" name="product" checked></input>
+              </form>
+            </ul>
+            <table class="info">
+              <tr>
+                <td>8,5 М</td>
+                <td>5 КГ</td>
+                <td>Карбон</td>
+              </tr>
+              <tr>
+                <td><small>Длина палки</small></td>
+                <td><small>Вес палки</small></td>
+                <td><small>Материал палки</small></td>
+              </tr>
+            </table>
+          </div>
+      </section>
+      <section class="popular">
+        <div class="popular-list"> <!--при наведении на див окно с категорией выделяется-->
+        <ul>
+          <div class="catalog-item" href="vr.html">
+          <li>
+            <p>
+              <a>
+                <img src="http://placehold.it/150x100" alt="Вертуальная реальность" width="100px" height="100px">
+              </a>
+            </p>
+            <h3>
+              <a>
+                <span class="catalog-category">Вертуальная реальность</span>
+              </a>
+            </h3>
+          </li>
+        </div>
+        <div class="popular-item" href="monopod.html">
+          <li>
+            <p>
+              <a>
+                <img src="http://placehold.it/150x100" alt="Моноподы для селфи" width="100px" height="100px">
+              </a>
+            </p>
+            <h3>
+              <a>
+                <span class="catalog-category">Моноподы для селфи</span>
+              </a>
+            </h3>
+          </li>
+        </div>
+        <div class="popular-item" href="acameras.html">
+          <li>
+            <p>
+              <a>
+                <img src="http://placehold.it/150x100" alt="Экшен камеры" width="100px" height="100px">
+              </a>
+            </p>
+            <h3>
+              <a>
+                <span class="catalog-category">Экшен камеры</span>
+              </a>
+            </h3>
+          </li>
+        </ul>
+      </div>
+      </div>
+      </section>
+
+
+    </main>
+    <footer>
+
+
+    </footer>
   </body>
 </html>
