@@ -32,14 +32,27 @@
       <p class="basket"><a class="button basket-button" href="basket.html">Корзина</a></p>
 
       <span class="site-catalog">
-        <p><a href="catalog.html">Каталог товаров</a></p>          <!--как??-->
+        <p><a href="catalog.html">Каталог товаров</a></p>          <!--вроде сделал-->
       </span>
-
-      <img src="http://placehold.it/150x100" width="10" height="10">
+      <div class="window">
+        <input class="hide" id="win-1" type="checkbox">
+        <label for="win-1">Каталог товаров</label>
+        <div>
+          <ul class="windows-catalog">
+            <li><a href="vr.html">Вертуальная реальность</a></li>
+            <li><a href="monopods.html">Моноподы для селфи</a></li>
+            <li><a href="acameras.html">Экшен камеры</a></li>
+            <li><a href="fit-drslt.html">Фитнес браслеты</a></li>
+            <li><a href="smart-watches.html">Умные часы</a></li>
+            <li><a href="copters.html">Квадракоптеры</a></li>
+          </ul>
+        </div>
+      </div>
+        <img src="http://placehold.it/150x100" width="10" height="10">
 
       <ul class="site-navigation">
         <li class="deliver"><a href="deliver.html">Доставка</a></li>
-        <li class="garant"><a href="garant.html">Гарантия</a></li>
+        <li class="warranty"><a href="garant.html">Гарантия</a></li>
         <li class="contacts"><a href="contacts.html">Контакты</a></li>
       </ul>
      </nav>
@@ -81,7 +94,7 @@
 
           <div class="products">
             <ul class="slides">
-              <img src="http://placehold.it/150x100" alt="Селфи палка ......." href="product1.html" width="300px" height="300px">
+              <img src="http://placehold.it/150x100" alt="Фитнес браслет" href="product2.html">
               <h1 class="name-item">
                 Худеем02<br>
                 правильно!
@@ -90,7 +103,7 @@
                 Мотивирующий фитнес-браслеты помогут найти в себе силы<br>
                 не пропускать занятия и соблюдать диету.
               </p>
-              <a href="product1.html">Подробнее</a>
+              <a href="product2.html">Подробнее</a>
               <form class="radio">
                 <input type="radio" name="product"></input>
                 <input type="radio" name="product" checked></input>
@@ -109,16 +122,16 @@
 
           <div class="products">
             <ul class="slides">
-              <img src="http://placehold.it/150x100" alt="Селфи палка ......." href="product1.html" width="300px" height="300px">
+              <img src="http://placehold.it/150x100" alt="Квадракоптер" href="product3.html" width="300px" height="300px">
               <h1 class="name-item">
-                Делай селфи,<br> <!--здесь продолжить-->
-                как Бен Стиллгер!
+                Пархет как бабочка,<br>
+                жалит как пчела.
               </h1>
               <p class="about-item">
-                Самая длинная палка для селфи доступная в насшем магазине.<br>
-                Восемь (Восемь, Карл) метров длиной и весом всего 5 килограмм.
+                Это обычный, на перывый взгляд, квадракоптер оснащен<br>
+                мощным лазером замаскированным под стандартную камеру.
               </p>
-              <a href="product1.html">Подробнее</a>
+              <a href="product3.html">Подробнее</a>
               <form class="radio">
                 <input type="radio" name="product"></input>
                 <input type="radio" name="product"></input>
@@ -127,68 +140,118 @@
             </ul>
             <table class="info">
               <tr>
-                <td>8,5 М</td>
-                <td>5 КГ</td>
-                <td>Карбон</td>
+                <td>800 м</td>
+                <td>50 м</td>
               </tr>
               <tr>
-                <td><small>Длина палки</small></td>
-                <td><small>Вес палки</small></td>
-                <td><small>Материал палки</small></td>
+                <td><small>Дальность полета</small></td>
+                <td><small>Радиус поражения</small></td>
               </tr>
             </table>
           </div>
       </section>
       <section class="popular">
         <div class="popular-list"> <!--при наведении на див окно с категорией выделяется-->
-        <ul>
-          <div class="catalog-item" href="vr.html">
-          <li>
-            <p>
-              <a>
-                <img src="http://placehold.it/150x100" alt="Вертуальная реальность" width="100px" height="100px">
-              </a>
-            </p>
-            <h3>
-              <a>
+          <div class="popular-item" href="vr.html">
+            <ul>
+              <li>
+                <img src="http://placehold.it/150x100" alt="Вертуальная реальность">
                 <span class="catalog-category">Вертуальная реальность</span>
-              </a>
-            </h3>
-          </li>
-        </div>
-        <div class="popular-item" href="monopod.html">
-          <li>
-            <p>
-              <a>
-                <img src="http://placehold.it/150x100" alt="Моноподы для селфи" width="100px" height="100px">
-              </a>
-            </p>
-            <h3>
-              <a>
+              </li>
+            </ul>
+          </div>
+          <div class="popular-item" href="monopod.html">
+            <ul>
+              <li>
+                <img src="http://placehold.it/150x100" alt="Моноподы для селфи">
                 <span class="catalog-category">Моноподы для селфи</span>
-              </a>
-            </h3>
-          </li>
-        </div>
-        <div class="popular-item" href="acameras.html">
-          <li>
-            <p>
-              <a>
-                <img src="http://placehold.it/150x100" alt="Экшен камеры" width="100px" height="100px">
-              </a>
-            </p>
-            <h3>
-              <a>
+              </li>
+            </ul>
+          </div>
+          <div class="popular-item" href="acameras.html">
+            <ul>
+              <li>
+                <img src="http://placehold.it/150x100" alt="Экшен камеры">
                 <span class="catalog-category">Экшен камеры</span>
-              </a>
-            </h3>
-          </li>
-        </ul>
-      </div>
-      </div>
+              </li>
+            </ul>
+          </div>
+          <div class="popular-item" href="fit-brslt.html">
+            <ul>
+              <li>
+                <img src="http://placehold.it/150x100" alt="Фитнес браслеты">
+                <span class="catalog-category">Фитнес браслеты</span>
+              </li>
+            </ul>
+          </div>
+          <div class="popular-item" href="smart-watches.html">
+            <ul>
+              <li>
+                <img src="http://placehold.it/150x100" alt="Умные часы">
+                <span class="catalog-category">Умные часы</span>
+              </li>
+            </ul>
+          </div>
+          <div class="popular-item" href="copters.html">
+            <ul>
+              <li>
+                <img src="http://placehold.it/150x100" alt="Квадракоптеры">
+                <span class="catalog-category">Квадракоптеры</span>
+              </li>
+            </ul>
+          </div>
       </section>
+      <section class="services">
+        <ul>
+          <li>Доставка</li>
+          <li>Гарантия</li>
+          <li>Кредит</li>
+        </ul>
+        <div class="delivery">
+          <h1>
+            <a>Доставка</a> <!--ссылка на сервисы-->
+          </h1>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо к вашему<br>
+            подъезду совершенно бесплатно! Ведь не плохо<br>
+            заработаем поднимая его на ваш этаж.
+          </p>
+          <img src="http://placehold.it/150x100">
+        </div>
 
+        <div class="warranty">
+          <h1>
+            <a>Гарантия</a> <!--ссылка на сервисы-->
+          </h1>
+          <p>
+            Если из-за возгорания купленного у нас товара у вас сгорит<br>
+            дом - не переживайте, мы выдадим вам новый.<br>
+            Товар, не дом, коневно же.
+          </p>
+          <img src="http://placehold.it/150x100">
+        </div>
 
+        <div class="credit">
+          <h1>
+            <a>Кредит</a> <!--ссылка на сервисы-->
+          </h1>
+          <p>
+            Залезть в долговую яму стало проще! Кредитные<br>
+            консультанты подберут для вас наиболее выгодные<br>
+            условия кредита. Выгодные для вашего банка, разумеется.
+          </p>
+          <img src="http://placehold.it/150x100">
+        </div>
+      </section>
+      <!--<section class="logos">
+
+      </section>
+      <section class="about-us">
+
+      </section>
+      <section class="contacts">
+
+      </section>-->
     </main>
     <footer>
 
