@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
+       <img src="http://placehold.it/150x100" width="111" height="24" alt="Логотип Интернет Магазина «DEVICE»">
+      </a>
+      <form class="main-form">
+       <p>
+         <img src="">
+         <input type="search" name="search" placeholder="Поиск по сайту">
+         <input type="submit" value="Найти">
+       </p>
+       <p>
+         <img src="">
+         <input type="email" name="login" placeholder="Войти">
+         <input type="submit" value="Войти">
+       </p>
+      </form>
+
+      <img src="http://placehold.it/150x100" width="15" height="15">
+
+      <p class="compare"><a class="button compare-button" href="compare.html">Сравнить</a></p>
+
+      <img src="http://placehold.it/150x100" width="15" height="15">
+
+      <p class="basket"><a class="button basket-button" href="basket.html">Корзина</a></p>
+
+      <div class="catalog-menu">
+        <div class="catalog-menu-heading">
+          <a href="#" class="catalog-menu-link">Каталог</a>
+          <button type="button" class="catalog-menu-toggle">+</button>
+        </div>
+        <div class="catalog-menu-dropdown">
+          <ul class="catalog-menu-dropdown-menu">
+            <li><a href="vr.html">Вертуальная реальность</a></li>
+            <li><a href="monopods.html">Моноподы для селфи</a></li>
+            <li><a href="acameras.html">Экшен камеры</a></li>
+            <li><a href="fit-drslt.html">Фитнес браслеты</a></li>
+            <li><a href="smart-watches.html">Умные часы</a></li>
+            <li><a href="copters.html">Квадракоптеры</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--<select>
+        <option value="catalog" selected><a href="catalog.html">Каталог товаров</a></option>
+        <option value="vr"><a href="vr.html">Вертуальная реальность</a></option>
+        <option value="monopods"><a href="monopods.html">Моноподы для селфи</a></option>
+        <option value="acameras"><a href="acameras.html">Экшен камеры</a></option>
+        <option value="fit-brslt"><a href="fit-drslt.html">Фитнес браслеты</a></option>
+        <option value="smart-watches"><a href="smart-watches.html">Умные часы</a></option>
+        <option value="copters"><a href="copters.html">Квадракоптеры</a></option>
+      </select>-->
+        <img src="http://placehold.it/150x100" width="15" height="15">
+
+      <ul class="site-navigation">
+        <li class="deliver"><a href="deliver.html">Доставка</a></li>
+        <li class="warranty"><a href="garant.html">Гарантия</a></li>
+        <li class="contacts"><a href="contacts.html">Контакты</a></li>
+      </ul>
+     </nav>
+    </header>
+    <main class="container">
+      <h1 class="page-title">Моноподы для селфи</h1>
+      <ul class="monopods">
+        <li href="index.html">Главная</li>
+        <li>></li>
+        <li href="calatog.html">Каталог</li>
+        <li>></li>
+        <li href="monopod.html">Моноподы для селфи</li>
+      </ul>
+      <section class="filter">
+        <h2 class="filter title">Фильтр:</h2>
+        <div class="value">
+          <b class="value title">Стоимость</b><br>
+          <input type="range" class="rage">
+        </div>
+        <div class="color">
+          <b class="color title">Цвет</b>
+          <div class="cheackbox">
+            <input type="checkbox" name="cheackbox" value="Черный">Черный<br>
+            <input type="checkbox" name="cheackbox" value="Белый">Белый<br>
+            <input type="checkbox" name="cheackbox" value="Синий">Синий<br>
+            <input type="checkbox" name="cheackbox" value="Красный">Красный<br>
+            <input type="checkbox" name="cheackbox" value="Розовый">Розовый<br>
+          </div>
+        </div>
+        <div class="Bluetooth">
+          <b class="bluetooth title">Bluetooth</b>
+          <div class="Availability">
+          <input type="radio" name="have" value="Есть">Есть<br>
+          <input type="radio" name="have" value="Нет">Нет<br>
+        </div>
+        <button class="filter botton" type="button" name="show">Показать</button>
+        </div>
+      </section>
+      <section class="main">
+        <div class="sort">
+          <b class="sort title">Сортировка:</b>
+          <ul class="sort level">
+            <li class="level-text"><a href="#">По цене</a></li>
+            <li class="level-text"><a href="#">По типу</a></li>
+            <li class="level-text"><a href="#">По популярности</a></li>
+          </ul>
+        </div>
+        <div class="arrows">
+          <a href="#">▴</a>
+          <a href="#">▾</a>
+        </div>
+
+        <section class="catalog">
+          <h2 class="visually-hidden">Список товаров</h2>
+          <div class="catalog-list">
+              <div class="catalog-item"> <!-- Товары -->
+              <h3>
+                <a href="catalog-item.html">
+                  <span class="catalog-category">Любительская селфи-палка</span>
+                  <span class="catalog-item-price">500 руб.</span>
+                </a>
+              </h3>
+              <p>
+                <a href="catalog-item.html">
+                  <img src="img/product-1.jpg" width="220" height="165" alt="Любительсякая селфи-палка">
+                </a>
+              </p>
+            </div>
+            <div class="catalog-item">
+              <h3>
+                <a href="catalog-item.html">
+                  <span class="catalog-category">Профессиональная селфи-палка</span>
+                  <span class="catalog-item-price">1500 руб.</span>
+                </a>
+              </h3>
+              <p class="catalog-item-image">
+                <a href="catalog-item.html">
+                  <img src="img/product-2.jpg" width="220" height="165" alt="Профессиональная селфи-палка">
+                </a>
+              </p>
+            </div>
+            <div class="catalog-item">
+              <h3>
+                <a href="catalog-item.html">
+                  <span class="catalog-category">Непотопляемая селфи-палка</span>
+                  <span class="catalog-item-price">2500 руб.</span>
+                </a>
+              </h3>
+              <p class="catalog-item-image">
+                <a href="catalog-item.html">
+                  <img src="img/product-3.jpg" width="220" height="165" alt="Непотопляемая селфи-палка">
+                </a>
+              </p>
+            </div>
+            <div class="catalog-item">
+              <h3>
+                <a href="catalog-item.html">
+                  <span class="catalog-category">Cелфи-палка «Следуй за мной»</span>
+                  <span class="catalog-item-price">4900 руб.</span>
+                </a>
+              </h3>
+              <p class="catalog-item-image">
+                <a href="catalog-item.html">
+                  <img src="img/product-4.jpg" width="220" height="165" alt="Cелфи-палка «Следуй за мной»">
+                </a>
+              </p>
+            </div>
+          </div>
+          <button class="b-n" type="button" name="button">Назад</button>
+          <ul class="nagination-list"> <!--номерация-->
+            <li class="nagination-item-current"><a>1</a></li>
+            <li class="nagination-item"><a href="#">2</a></li>
+            <li class="nagination-item"><a href="#">3</a></li>
+          </ul>
+          <button class="b-n" type="button" name="button">Вперед</button>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top">
+       <img src="http://placehold.it/150x100" alt="">
+       <ul>
+         <li><a class="login-button"href="login.html">Войти</a></li>
+         <li><a class="compare-button" href="compare.html">Сравнить</a></li>
+         <li><a class="button basket-button" href="basket.html">Корзина</a></li>
+       </ul>
+      </div>
+      <div class="footer-mid">
+       <b class="ad-ph">г.Москва ул.Строителей 15</b>
+       <ul>
+         <li>Доставка</li>
+         <li>Гарантия</li>
+         <li>Контакты</li>
+       </ul>
+       <b class="ad-ph">Тел. +7 (495) 495-95-95</b>
+      </div>
+      <div class="footer-bottom">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+        <img src="http://placehold.it/150x100" alt="htmlacademy" href="https://htmlacademy.ru">
+      </div>
+    </footer>
+  </body>
+</html>
