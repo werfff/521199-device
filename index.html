@@ -6,31 +6,24 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-       <img src="http://placehold.it/150x100" width="111" height="24" alt="Логотип Интернет Магазина «DEVICE»">
-      </a>
-      <form class="main-form">
-       <p>
-         <img src="">
-         <input type="search" name="search" placeholder="Поиск по сайту">
-         <input type="submit" value="Найти">
-       </p>
-       <p>
-         <img src="">
-         <input type="email" name="login" placeholder="Войти">
-         <input type="submit" value="Войти">
-       </p>
-      </form>
-
-      <img src="http://placehold.it/150x100" width="15" height="15">
-
-      <p class="compare"><a class="button compare-button" href="compare.html">Сравнить</a></p>
-
-      <img src="http://placehold.it/150x100" width="15" height="15">
-
-      <p class="basket"><a class="button basket-button" href="basket.html">Корзина</a></p>
-
+      <!--<nav class="main-navigation">-->
+      <a class="main-header-logo" href="index.html">DEVICE</a>
+      <div class="header-action">
+        <form action="#" class="header-search">
+          <button type="submit"><img src="http://placehold.it/150x100" alt="Search-icon"></img></button>
+          <input type="search" name="search" placeholder="Поиск по сайту">
+        </form>
+        <div class="account-action">
+          <div class="account-login">
+            <a href="#" class="account-link"><img src="http://placehold.it/150x100" width="15" height="15">Войти</a>
+          </div>
+          <div class="account-activity">
+            <a href="#" class="account-link"><img src="http://placehold.it/150x100" width="15" height="15">Сравнить</a>
+            <a href="#" class="account-link"><img src="http://placehold.it/150x100" width="15" height="15">Корзина</a>
+          </div>
+        </div>
+      </div> <!--header-action is end-->
+      <nav class="main-nav">
       <div class="catalog-menu">
         <div class="catalog-menu-heading">
           <a href="#" class="catalog-menu-link">Каталог</a>
@@ -56,51 +49,101 @@
         <option value="smart-watches"><a href="smart-watches.html">Умные часы</a></option>
         <option value="copters"><a href="copters.html">Квадракоптеры</a></option>
       </select>-->
-        <img src="http://placehold.it/150x100" width="15" height="15">
-
       <ul class="site-navigation">
         <li class="deliver"><a href="deliver.html">Доставка</a></li>
         <li class="warranty"><a href="garant.html">Гарантия</a></li>
         <li class="contacts"><a href="contacts.html">Контакты</a></li>
       </ul>
-     </nav>
+      </nav>
     </header>
     <main>
       <section class="showcase">
         <div class="slideshow-container">
           <div class="products">
             <ul class="slides">
+              <li class="slides-item">
               <img src="http://placehold.it/150x100" alt="Селфи палка" href="product1.html">
-              <h1 class="name-item">
-                Делай селфи,01<br>
-                как Бен Стиллгер!
-              </h1>
+              <div class="product-description">
+               <div class="slider-count">01</div>
+                <h1 class="name-item">
+                  Делай селфи,<br>
+                  как Бен Стиллгер!
+                </h1>
               <p class="about-item">
                 Самая длинная палка для селфи доступная в насшем магазине.<br>
                 Восемь (Восемь, Карл) метров длиной и весом всего 5 килограмм.
               </p>
               <a href="product1.html">Подробнее</a>
+              <table class="info">
+                <tr>
+                  <td>8,5 М</td>
+                  <td>5 КГ</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr>
+                  <td><small>Длина палки</small></td>
+                  <td><small>Вес палки</small></td>
+                  <td><small>Материал палки</small></td>
+                </tr>
+              </table>
+            </li>
+            <li class="slides-item">
+              <img src="http://placehold.it/150x100" alt="Фитнес браслет" href="product2.html">
+              <div class="product-description">
+               <div class="slider-count">02</div>
+               <h1 class="name-item">
+                 Худеем<br>
+                 правильно!
+               </h1>
+               <p class="about-item">
+                 Мотивирующий фитнес-браслеты помогут найти в себе силы<br>
+                 не пропускать занятия и соблюдать диету.
+               </p>
+              <a href="product2.html">Подробнее</a>
+              <table class="info">
+                <tr>
+                  <td>48 часов</td>
+                </tr>
+                <tr>
+                  <td><small>Без подзорядки</small></td>
+                </tr>
+              </table>
+            </li>
+
+            <li class="slides-item">
+              <img src="http://placehold.it/150x100" alt="Фитнес браслет" href="product2.html">
+              <div class="product-description">
+               <div class="slider-count">03</div>
+               <h1 class="name-item">
+                 Пархет как бабочка,<br>
+                 жалит как пчела.
+               </h1>
+               <p class="about-item">
+                 Это обычный, на перывый взгляд, квадракоптер оснащен<br>
+                 мощным лазером замаскированным под стандартную камеру.
+               </p>
+              <a href="product3.html">Подробнее</a>
+              <table class="info">
+                <tr>
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr>
+                  <td><small>Дальность полета</small></td>
+                  <td><small>Радиус поражения</small></td>
+                </tr>
+              </table>
+            </li>
             </ul>
-            <form class="radio">
+            <form class="radio">   <!--использовать список с input type="radio"-->
               <input type="radio" name="product" checked></input>
               <input type="radio" name="product"></input>
               <input type="radio" name="product"></input>
             </form>
-            <table class="info">
-              <tr>
-                <td>8,5 М</td>
-                <td>5 КГ</td>
-                <td>Карбон</td>
-              </tr>
-              <tr>
-                <td><small>Длина палки</small></td>
-                <td><small>Вес палки</small></td>
-                <td><small>Материал палки</small></td>
-              </tr>
-            </table>
+          </div>
           </div>
 
-          <div class="products">
+          <!--<div class="products">
             <ul class="slides">
               <img src="http://placehold.it/150x100" alt="Фитнес браслет" href="product2.html">
               <h1 class="name-item">
@@ -156,10 +199,65 @@
                 <td><small>Радиус поражения</small></td>
               </tr>
             </table>
-          </div>
+          </div>-->
       </section>
-      <section class="popular">
-        <div class="popular-list"> <!--при наведении на див окно с категорией выделяется-->
+      <div class="popular">
+        <ul class="popular-list">
+          <li class="popular-item">
+            <a href="#">
+              <div class="">
+                <img src="http://placehold.it/150x100" alt="Вертуальная реальность">
+              </div>
+              <span>Вертуальная реальность</span>
+            </a>
+          </li>
+
+          <li class="popular-item">
+            <a href="#">
+              <div class="">
+                <img src="http://placehold.it/150x100" alt="Моноподы для селфи">
+              </div>
+              <span>Моноподы для селфи</span>
+            </a>
+          </li>
+
+          <li class="popular-item">
+            <a href="#">
+              <div class="">
+                <img src="http://placehold.it/150x100" alt="Экшен камеры">
+              </div>
+              <span>Экшен камеры</span>
+            </a>
+          </li>
+
+          <li class="popular-item">
+            <a href="#">
+              <div class="">
+                <img src="http://placehold.it/150x100" alt="Фитнес браслеты">
+              </div>
+              <span>Фитнес браслеты</span>
+            </a>
+          </li>
+
+          <li class="popular-item">
+            <a href="#">
+              <div class="">
+                <img src="http://placehold.it/150x100" alt="Умные часы">
+              </div>
+              <span>Умные часы</span>
+            </a>
+          </li>
+
+          <li class="popular-item">
+            <a href="#">
+              <div class="">
+                <img src="http://placehold.it/150x100" alt="Квадракоптеры">
+              </div>
+              <span>Квадракоптеры</span>
+            </a>
+          </li>
+        </ul>
+        <!--<div class="popular-list">
           <div class="popular-item">
             <a href="vr.html">
             <ul>
@@ -218,16 +316,16 @@
                 <span class="catalog-category">Квадракоптеры</span>
               </li>
             </ul>
-          </div>
+          </div>-->
         </div>
-      </section>
+      </div>
       <section class="services">
         <ul>
-          <li>Доставка</li>
-          <li>Гарантия</li>
-          <li>Кредит</li>
+          <li><a href="#delivery">Доставка</a></li>
+          <li><a href="warranty">Гарантия</a></li>
+          <li><a href="#credit">Кредит</a></li>
         </ul>
-        <div class="delivery">
+        <div id="delivery">
           <h2>
             <a href="#">Доставка</a> <!--ссылка на сервисы-->
           </h2>
@@ -239,7 +337,7 @@
           <img src="http://placehold.it/150x100">
         </div>
 
-        <div class="warranty">
+        <div id="warranty">
           <h2>
             <a href="#">Гарантия</a> <!--ссылка на сервисы-->
           </h2>
@@ -251,7 +349,7 @@
           <img src="http://placehold.it/150x100">
         </div>
 
-        <div class="credit">
+        <div id="credit">
           <h2>
             <a>Кредит</a> <!--ссылка на сервисы-->
           </h2>
@@ -263,14 +361,15 @@
           <img src="http://placehold.it/150x100">
         </div>
       </section>
-      <section class="logos">
+      <div class="logos">
         <ul class="logos-list">
           <li><img src="http://placehold.it/150x100" alt="dji"></li>
           <li><img src="http://placehold.it/150x100" alt="SPGadgets"></li>
           <li><img src="http://placehold.it/150x100" alt="GoPro"></li>
           <li><img src="http://placehold.it/150x100" alt="VIVE"></li>
         </ul>
-      </section>
+      </div>
+      <div>
       <section class="about-us">
         <h2>О нас</h2>
         <p>
@@ -286,39 +385,27 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="about-us-more.html" class="about-us-more">Подробнее о нас</a>
+        <a href="about-us-more.html" class="action-btn">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2>Контакты</h2>
         <p>
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
           проверить работоспособность покупки. Всякое бывает.
         </p>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <span class="modal-close">x</span>
-        <a></a>
         <div class="write-container">
-          <a href="#">Напишине нам</a>
-        </div>
-        <div class="write-popup">
-          <div class="write-popup-content">
-            <form class="write-us">
-              <b>Ваше имя:</b>
-              <input type="text" name="name" placeholder="Представтесь, пожалуйста">
-              <b>Ваш e-mail:</b>
-              <input type="email" name="email" placeholder="Для отправки ответа">
-            </form>
-            <textarea rows="23" cols="50" placeholder="В свободной форме"></textarea>
-            <input type="submit">
-          </div>
+          <a href="write-us" class="action-btm">Напишите нам</a>
         </div>
       </section>
+    </div>
     </main>
     <footer>
       <div class="footer-top">
-       <img src="http://placehold.it/150x100" alt="">
+       <a href="index.html">DEVICE</a>
        <ul>
          <li><a class="login-button"href="login.html">Войти</a></li>
          <li><a class="compare-button" href="compare.html">Сравнить</a></li>
@@ -326,13 +413,13 @@
        </ul>
       </div>
       <div class="footer-mid">
-       <b class="ad-ph">г.Москва ул.Строителей 15</b>
+       <span class="contact-item">г.Москва ул.Строителей 15</span>
        <ul>
          <li>Доставка</li>
          <li>Гарантия</li>
          <li>Контакты</li>
        </ul>
-       <b class="ad-ph">Тел. +7 (495) 495-95-95</b>
+       <a href="tel:+74954959595" class="contact-item">Тел. +7 (495) 495-95-95</a>
       </div>
       <div class="footer-bottom">
         <ul>
@@ -340,8 +427,23 @@
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
-        <img src="http://placehold.it/150x100" alt="htmlacademy" href="https://htmlacademy.ru">
+        <a href="https://htmlacademy.ru">
+          <img src="http://placehold.it/150x100" alt="htmlacademy">
+        </a>
       </div>
+
     </footer>
+    <div class="write-popup">
+      <div class="write-popup-content">
+        <form class="write-us" action="#">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name" placeholder="Представтесь, пожалуйста">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" id="email" placeholder="Для отправки ответа">
+          <textarea rows="23" cols="50" placeholder="В свободной форме"></textarea>
+          <input type="submit">
+          <button type="button">x</button>
+        </form>
+      </div>
   </body>
 </html>
