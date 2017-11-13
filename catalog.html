@@ -49,41 +49,42 @@
     </header>
     <main class="container">
       <h1 class="page-title">Моноподы для селфи</h1>
-      <ul class="monopods">
+      <ul class="breadcrumbs"> <!--хлебные -->
         <li href="index.html">Главная</li>
-        <li>></li>
         <li href="calatog.html">Каталог</li>
-        <li>></li>
         <li href="monopod.html">Моноподы для селфи</li>
       </ul>
+      <form class="filter-form" action="#">
       <section class="filter">
         <h2 class="filter title">Фильтр:</h2>
-        <div class="value">
-          <b class="value title">Стоимость</b><br>
-          <input type="range" class="rage">
-        </div>
-        <div class="color">
-          <b class="color title">Цвет</b>
-          <div class="cheackbox">
-            <input type="checkbox" name="cheackbox" value="Черный">Черный<br>
-            <input type="checkbox" name="cheackbox" value="Белый">Белый<br>
-            <input type="checkbox" name="cheackbox" value="Синий">Синий<br>
-            <input type="checkbox" name="cheackbox" value="Красный">Красный<br>
-            <input type="checkbox" name="cheackbox" value="Розовый">Розовый<br>
-          </div>
-        </div>
-        <div class="Bluetooth">
-          <b class="bluetooth title">Bluetooth</b>
-          <div class="Availability">
-          <input type="radio" name="have" value="Есть">Есть<br>
-          <input type="radio" name="have" value="Нет">Нет<br>
-        </div>
-        <button class="filter botton" type="button" name="show">Показать</button>
+        <div class="filter-body">
+         <fieldset class="value">
+           <legend class="value-legend">Стоимость</legend><br>
+           <input type="range" class="range">
+         </fieldset>
+         <fieldset class="color">
+           <legend class="color-legend">Цвет</legend>
+           <div class="cheackbox">
+             <input type="checkbox" name="checkbox" value="Черный">Черный<br>
+             <input type="checkbox" name="checkbox" value="Белый">Белый<br>
+             <input type="checkbox" name="checkbox" value="Синий">Синий<br>
+             <input type="checkbox" name="checkbox" value="Красный">Красный<br>
+             <input type="checkbox" name="checkbox" value="Розовый">Розовый<br>
+           </div>
+         </fieldset>
+         <fieldset class="bluetooth">
+           <legend class="bluetooth-legend">Bluetooth</legend>
+           <div class="availability">
+            <input type="radio" name="have" value="Есть">Есть<br>
+            <input type="radio" name="have" value="Нет">Нет<br>
+           </div>
+         </fieldset>
+         <button class="filter-botton" type="submit">Показать</button>
         </div>
       </section>
       <section class="main">
         <div class="sort">
-          <b class="sort title">Сортировка:</b>
+          <h2 class="sort title">Сортировка:</h2>
           <ul class="sort level">
             <li class="level-text"><a href="#">По цене</a></li>
             <li class="level-text"><a href="#">По типу</a></li>
@@ -91,75 +92,75 @@
           </ul>
         </div>
         <div class="arrows">
-          <a href="#">▴</a>
-          <a href="#">▾</a>
+          <a href="#" data-sort="asc">▴</a>
+          <a href="#" data-sort="desc">▾</a>
         </div>
-
         <section class="catalog">
           <h2 class="visually-hidden">Список товаров</h2>
           <div class="catalog-list">
-              <div class="catalog-item"> <!-- Товары -->
-              <h3>
-                <a href="catalog-item.html">
-                  <span class="catalog-category">Любительская селфи-палка</span>
-                  <span class="catalog-item-price">500 руб.</span>
-                </a>
-              </h3>
-              <p>
+              <article class="catalog-item"> <!-- Товары -->
                 <a href="catalog-item.html">
                   <img src="img/product-1.jpg" width="220" height="165" alt="Любительсякая селфи-палка">
                 </a>
-              </p>
-            </div>
-            <div class="catalog-item">
+              <h3>
+                <a href="catalog-item.html">
+                  <span class="catalog-category">Любительская селфи-палка</span>
+                </a>
+              </h3>
+              <span class="catalog-item-price">500 руб.</span>
+            </article>
+            <article class="catalog-item">
+              <a href="catalog-item.html">
+                <img src="img/product-2.jpg" width="220" height="165" alt="Профессиональная селфи-палка">
+              </a>
               <h3>
                 <a href="catalog-item.html">
                   <span class="catalog-category">Профессиональная селфи-палка</span>
-                  <span class="catalog-item-price">1500 руб.</span>
                 </a>
               </h3>
-              <p class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/product-2.jpg" width="220" height="165" alt="Профессиональная селфи-палка">
-                </a>
-              </p>
-            </div>
-            <div class="catalog-item">
+              <span class="catalog-item-price">1500 руб.</span>
+            </article>
+            <article class="catalog-item">
+              <a href="catalog-item.html">
+                <img src="img/product-3.jpg" width="220" height="165" alt="Непотопляемая селфи-палка">
+              </a>
               <h3>
                 <a href="catalog-item.html">
                   <span class="catalog-category">Непотопляемая селфи-палка</span>
                   <span class="catalog-item-price">2500 руб.</span>
                 </a>
               </h3>
-              <p class="catalog-item-image">
+              <span class="catalog-item-price">2500 руб.</span>
                 <a href="catalog-item.html">
                   <img src="img/product-3.jpg" width="220" height="165" alt="Непотопляемая селфи-палка">
                 </a>
-              </p>
-            </div>
-            <div class="catalog-item">
+            </article>
+            <article class="catalog-item">
+              <a href="catalog-item.html">
+                <img src="img/product-4.jpg" width="220" height="165" alt="Cелфи-палка «Следуй за мной»">
+              </a>
               <h3>
                 <a href="catalog-item.html">
                   <span class="catalog-category">Cелфи-палка «Следуй за мной»</span>
                   <span class="catalog-item-price">4900 руб.</span>
                 </a>
               </h3>
-              <p class="catalog-item-image">
+              <span class="catalog-item-price">4900 руб.</span>
                 <a href="catalog-item.html">
                   <img src="img/product-4.jpg" width="220" height="165" alt="Cелфи-палка «Следуй за мной»">
                 </a>
-              </p>
-            </div>
+            </article>
           </div>
-          <button class="b-n" type="button" name="button">Назад</button>
+          <a class="b-n" href="#">Назад</a>
           <ul class="nagination-list"> <!--номерация-->
             <li class="nagination-item-current"><a>1</a></li>
             <li class="nagination-item"><a href="#">2</a></li>
             <li class="nagination-item"><a href="#">3</a></li>
           </ul>
-          <button class="b-n" type="button" name="button">Вперед</button>
+          <a class="b-n" href="#">Вперед</a>
         </section>
       </section>
+      </form>
     </main>
     <footer>
       <div class="footer-top">
