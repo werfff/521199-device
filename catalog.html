@@ -6,31 +6,24 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-       <img src="http://placehold.it/150x100" width="111" height="24" alt="Логотип Интернет Магазина «DEVICE»">
-      </a>
-      <form class="main-form">
-       <p>
-         <img src="">
-         <input type="search" name="search" placeholder="Поиск по сайту">
-         <input type="submit" value="Найти">
-       </p>
-       <p>
-         <img src="">
-         <input type="email" name="login" placeholder="Войти">
-         <input type="submit" value="Войти">
-       </p>
-      </form>
-
-      <img src="http://placehold.it/150x100" width="15" height="15">
-
-      <p class="compare"><a class="button compare-button" href="compare.html">Сравнить</a></p>
-
-      <img src="http://placehold.it/150x100" width="15" height="15">
-
-      <p class="basket"><a class="button basket-button" href="basket.html">Корзина</a></p>
-
+      <!--<nav class="main-navigation">-->
+      <a class="main-header-logo" href="index.html">DEVICE</a>
+      <div class="header-action">
+        <form action="#" class="header-search">
+          <button type="submit"><img src="http://placehold.it/150x100" alt="Search-icon" width="15" height="15"></img></button>
+          <input type="search" name="search" placeholder="Поиск по сайту">
+        </form>
+        <div class="account-action">
+          <div class="account-login">
+            <a href="#" class="account-link"><img src="http://placehold.it/150x100" width="15" height="15">Войти</a>
+          </div>
+          <div class="account-activity">
+            <a href="#" class="account-link"><img src="http://placehold.it/150x100" width="15" height="15">Сравнить</a>
+            <a href="#" class="account-link"><img src="http://placehold.it/150x100" width="15" height="15">Корзина</a>
+          </div>
+        </div>
+      </div> <!--header-action is end-->
+      <nav class="main-nav">
       <div class="catalog-menu">
         <div class="catalog-menu-heading">
           <a href="#" class="catalog-menu-link">Каталог</a>
@@ -47,23 +40,12 @@
           </ul>
         </div>
       </div>
-      <!--<select>
-        <option value="catalog" selected><a href="catalog.html">Каталог товаров</a></option>
-        <option value="vr"><a href="vr.html">Вертуальная реальность</a></option>
-        <option value="monopods"><a href="monopods.html">Моноподы для селфи</a></option>
-        <option value="acameras"><a href="acameras.html">Экшен камеры</a></option>
-        <option value="fit-brslt"><a href="fit-drslt.html">Фитнес браслеты</a></option>
-        <option value="smart-watches"><a href="smart-watches.html">Умные часы</a></option>
-        <option value="copters"><a href="copters.html">Квадракоптеры</a></option>
-      </select>-->
-        <img src="http://placehold.it/150x100" width="15" height="15">
-
       <ul class="site-navigation">
         <li class="deliver"><a href="deliver.html">Доставка</a></li>
         <li class="warranty"><a href="garant.html">Гарантия</a></li>
         <li class="contacts"><a href="contacts.html">Контакты</a></li>
       </ul>
-     </nav>
+      </nav>
     </header>
     <main class="container">
       <h1 class="page-title">Моноподы для селфи</h1>
@@ -181,7 +163,7 @@
     </main>
     <footer>
       <div class="footer-top">
-       <img src="http://placehold.it/150x100" alt="">
+       <a href="index.html">DEVICE</a>
        <ul>
          <li><a class="login-button"href="login.html">Войти</a></li>
          <li><a class="compare-button" href="compare.html">Сравнить</a></li>
@@ -189,13 +171,13 @@
        </ul>
       </div>
       <div class="footer-mid">
-       <b class="ad-ph">г.Москва ул.Строителей 15</b>
+       <span class="contact-item">г.Москва ул.Строителей 15</span>
        <ul>
          <li>Доставка</li>
          <li>Гарантия</li>
          <li>Контакты</li>
        </ul>
-       <b class="ad-ph">Тел. +7 (495) 495-95-95</b>
+       <a href="tel:+74954959595" class="contact-item">Тел. +7 (495) 495-95-95</a>
       </div>
       <div class="footer-bottom">
         <ul>
@@ -203,8 +185,11 @@
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
-        <img src="http://placehold.it/150x100" alt="htmlacademy" href="https://htmlacademy.ru">
+        <a href="https://htmlacademy.ru">
+          <img src="http://placehold.it/150x100" alt="htmlacademy">
+        </a>
       </div>
+
     </footer>
   </body>
 </html>
