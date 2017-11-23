@@ -10,16 +10,16 @@
       <a class="main-header-logo" href="index.html">DEVICE</a>
       <div class="header-action">
         <form action="#" class="header-search">
-          <button type="submit"><img src="http://placehold.it/150x100" alt="Search-icon" width="15" height="15"></img></button>
+          <button type="submit"><img src="img/search.svg" alt="Search-icon" width="15" height="15"></img></button>
           <input type="search" name="search" placeholder="Поиск по сайту">
         </form>
         <div class="account-action">
           <div class="account-login">
-            <a href="#" class="account-link"><img src="http://placehold.it/150x100" width="15" height="15">Войти</a>
+            <a href="#" class="account-link"><img src="img/user.svg" width="15" height="15">Войти</a>
           </div>
           <div class="account-activity">
-            <a href="#" class="account-link"><img src="http://placehold.it/150x100" width="15" height="15">Сравнить</a>
-            <a href="#" class="account-link"><img src="http://placehold.it/150x100" width="15" height="15">Корзина</a>
+            <a href="#" class="account-link"><img src="img/compare.svg" width="15" height="15">Сравнить</a>
+            <a href="#" class="account-link"><img src="img/cart.svg" width="15" height="15">Корзина</a>
           </div>
         </div>
       </div> <!--header-action is end-->
@@ -47,6 +47,7 @@
       </ul>
       </nav>
     </header>
+
     <main class="container">
       <h1 class="page-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs"> <!--хлебные -->
@@ -60,7 +61,10 @@
         <div class="filter-body">
          <fieldset class="value">
            <legend class="value-legend">Стоимость</legend><br>
-           <input type="range" class="range">
+           <form oninput="rangeput=range">
+             <input type="range" name="range" id="range" class="range"> <!-- HELP -->
+             <output name="rangeput"></output>
+           </form>
          </fieldset>
          <fieldset class="color">
            <legend class="color-legend">Цвет</legend>
@@ -92,15 +96,15 @@
           </ul>
         </div>
         <div class="arrows">
-          <a href="#" data-sort="asc">▴</a>
-          <a href="#" data-sort="desc">▾</a>
+          <a href="#" data-sort="asc"><img src="img/con-up-dir.svg" alt="▴"></a>
+          <a href="#" data-sort="desc"><img src="img/con-down-dir.svg" alt="▾"></a>
         </div>
         <section class="catalog">
           <h2 class="visually-hidden">Список товаров</h2>
           <div class="catalog-list">
               <article class="catalog-item"> <!-- Товары -->
                 <a href="catalog-item.html">
-                  <img src="img/product-1.jpg" width="220" height="165" alt="Любительсякая селфи-палка">
+                  <img src="img/item-1.jpg" width="220" height="165" alt="Любительсякая селфи-палка">
                 </a>
               <h3>
                 <a href="catalog-item.html">
@@ -111,7 +115,7 @@
             </article>
             <article class="catalog-item">
               <a href="catalog-item.html">
-                <img src="img/product-2.jpg" width="220" height="165" alt="Профессиональная селфи-палка">
+                <img src="img/item-2.jpg" width="220" height="165" alt="Профессиональная селфи-палка">
               </a>
               <h3>
                 <a href="catalog-item.html">
@@ -122,7 +126,7 @@
             </article>
             <article class="catalog-item">
               <a href="catalog-item.html">
-                <img src="img/product-3.jpg" width="220" height="165" alt="Непотопляемая селфи-палка">
+                <img src="img/item-3.jpg" width="220" height="165" alt="Непотопляемая селфи-палка">
               </a>
               <h3>
                 <a href="catalog-item.html">
@@ -130,14 +134,10 @@
                   <span class="catalog-item-price">2500 руб.</span>
                 </a>
               </h3>
-              <span class="catalog-item-price">2500 руб.</span>
-                <a href="catalog-item.html">
-                  <img src="img/product-3.jpg" width="220" height="165" alt="Непотопляемая селфи-палка">
-                </a>
             </article>
             <article class="catalog-item">
               <a href="catalog-item.html">
-                <img src="img/product-4.jpg" width="220" height="165" alt="Cелфи-палка «Следуй за мной»">
+                <img src="img/item-4.jpg" width="220" height="165" alt="Cелфи-палка «Следуй за мной»">
               </a>
               <h3>
                 <a href="catalog-item.html">
@@ -145,10 +145,6 @@
                   <span class="catalog-item-price">4900 руб.</span>
                 </a>
               </h3>
-              <span class="catalog-item-price">4900 руб.</span>
-                <a href="catalog-item.html">
-                  <img src="img/product-4.jpg" width="220" height="165" alt="Cелфи-палка «Следуй за мной»">
-                </a>
             </article>
           </div>
           <a class="b-n" href="#">Назад</a>
@@ -182,15 +178,14 @@
       </div>
       <div class="footer-bottom">
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#"><img src="img/fb.svg" alt="Фейсбук"></a></li>
+          <li><a class="social-button" href="#"><img src="img/instagram.svg" alt="Инстаграм"></a></li>
+          <li><a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер"></a></li>
         </ul>
         <a href="https://htmlacademy.ru">
-          <img src="http://placehold.it/150x100" alt="htmlacademy">
+          <img src="img/logo-html.svg" alt="htmlacademy">
         </a>
       </div>
-
     </footer>
   </body>
 </html>
