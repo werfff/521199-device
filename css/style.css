@@ -1,13 +1,17 @@
 body {  /*  */
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
+}
+@font-face {  /* проблема! */
+  font-family: 'Gilroy';
+  src: url('font/gilroy-extrabold.otf') format('truetype'),
+       url('font/gilroy-light.otf') format('truetype');
 }
 .visually-hidden {  /* скрытые тексты всего сайта */
   display: none;
