@@ -425,11 +425,20 @@ ul.level li{    /* однострочность логотипов */
   font-weight: lighter;
   color: #9c9c9c;
 }
+.navigation {
+  width: 760px;
+  height: 70px;
+  background-color: #ebebeb;
+  margin-bottom: 77px;
+}
 .navigation a{     /* навигация по страницам */
   color: #000000;
+  font-weight: bold;
+  font-size: 18px;
 }
 .navigation-list li{
   list-style: none;
+  text-align: center;
 }
 ul.navigation-list {    /* однострочность логотипов */
     margin: 0;
