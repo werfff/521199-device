@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Hind:700" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Hind:700" rel="stylesheet">-->
+    <!--<link href="font/gilroy-extrabold.otf" rel="stylesheet">-->
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -64,7 +65,7 @@
           -->
       <div class="catalog-menu">
         <div class="catalog-menu-heading">
-          <a href="#" class="catalog-menu-link">Каталог</a>
+          <a href="#" class="catalog-menu-link">Каталог товаров</a>
           <button type="button" class="catalog-menu-toggle"><img src="img/plus.svg" alt="+" height="10" width="10"></button>
         </div>
         <div class="catalog-menu-dropdown">
@@ -120,23 +121,23 @@
              <ul class="color-list">
               <li> <!--проблема!-->
                 <input type="checkbox" name="checkbox" id="color-1" value="Черный">
-                <label class="visually-hidden" for="color-1">Черный</label>
+                <label class="color-name" for="color-1">Черный</label>
               </li>
               <li>
                 <input type="checkbox" name="checkbox" id="color-2" value="Белый">
-                <label class="visually-hidden" for="color-2">Белый</label>
+                <label class="color-name" for="color-2">Белый</label>
                </li>
                <li>
                 <input type="checkbox" name="checkbox" id="color-3" value="Синий">
-                <label class="visually-hidden" for="color-3">Синий</label>
+                <label class="color-name" for="color-3">Синий</label>
                </li>
                <li>
                 <input type="checkbox" name="checkbox" id="color-4" value="Красный">
-                <label class="visually-hidden" for="color-4">Красный</label>
+                <label class="color-name" for="color-4">Красный</label>
                </li>
                <li>
                 <input type="checkbox" name="checkbox" id="color-5" value="Розовый">
-                <label class="visually-hidden" for="color-5">Розовый</label>
+                <label class="color-name" for="color-5">Розовый</label>
                </li>
              </ul>
            </div>
@@ -145,10 +146,10 @@
            <legend class="bluetooth-legend">Bluetooth</legend>
            <div class="availability">
             <input type="radio" name="have" id="have" value="Есть">
-            <label class="visually-hidden" for="have">Есть</label>
+            <label class="have-not" for="have">Есть</label>
 
             <input type="radio" name="have" id="have-not" value="Нет">
-            <label class="visually-hidden" for="have-not">Нет</label>
+            <label class="have-not" for="have-not">Нет</label>
            </div>
          </fieldset>
          <button class="filter-botton" type="submit">Показать</button>

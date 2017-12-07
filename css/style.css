@@ -10,8 +10,8 @@ body {  /*  */
 }
 @font-face {  /* проблема! */
   font-family: 'Gilroy';
-  src: url('font/gilroy-extrabold.otf') format('truetype'),
-       url('font/gilroy-light.otf') format('truetype');
+  src: url('../font/gilroy-extrabold.otf') format('truetype'),
+       url('../font/gilroy-light.otf') format('truetype');
 }
 .visually-hidden {  /* скрытые тексты всего сайта */
   display: none;
@@ -66,7 +66,7 @@ body {  /*  */
   height: 40px;
 
   background-color: #f5ebc7;
-  color: rgba(0, 0, 0, 0.7);
+  opacity: 0.3;
   border: 0px;
 }
 ul.catalog-menu-dropdown-li { /* горизонт */
@@ -153,27 +153,27 @@ ul.radio {
 ul.radio li {
   display: inline;
 }
-.popular-list {  /* пункты популярного *
-  /*height: 160px;*/
-  width: 160px;
+.popular-list {  /* пункты популярного */
   list-style: none;
-}
-ul.popular-list {
-    margin: 0;
+  margin: 0 -20px;
 }
 ul.popular-list li {
-    display: inline;
+    display: inline-block;
 }
 
 .popular-list a{  /* ссылки популярного */
   color: #000000;
   list-style: none;
+  display: inline-block;
 }
-ul.popular-list a{
-    margin: 0;
-}
-ul.popular-list a {
-    display: inline;
+.popular-item-box {
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .popular-list span{  /* текст популярного */
   font-size: 18px;
@@ -186,12 +186,13 @@ ul.popular-list a {
 .services-name a{   /* текст популярного */
   color: #000000;
 }
-.logos-list {   /* логотипы */
+.logos-list img{   /* логотипы */
   list-style: none;
   letter-spacing: 60px;
   filter: grayscale(100%) opacity(50%);
+  transition: 0.15s ease-out;
 }
-.logos-list:active {    /* наведение нв логотипы */
+.logos-list img:hover{    /* наведение нв логотипы */
   filter: grayscale(0%);
 }
 
