@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!--<link href="../font/gilroy-extrabold.otf" rel="stylesheet">-->
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <section class="inside-header">
+    <header class="container">
+      <section class="main-header">
       <!--<nav class="main-navigation">-->
-      <a class="main-header-logo" href="index.html"><img src="img/logo.png" alt="DEVICE"></a>
+      <a class="main-header-logo" href="index.html">DEVICE</a>
       <div class="header-action">
         <form action="https://echo.htmlacademy.ru" method="post" class="header-search">
           <p class="header-search-items">
@@ -21,11 +20,11 @@
         </form>
         <div class="account-action">
           <div class="account-login">
-            <a href="#" class="account-link"><img src="img/user.svg" width="15" height="15" alt="Войти"> Войти</a>
+            <a href="#" class="account-link"><img src="img/user.svg" width="10" height="10" alt="Войти"> Войти</a>
           </div>
           <div class="account-activity">
-            <a href="#" class="account-link"><img src="img/compare.svg" width="15" height="15" alt="Сравнить"> Сравнить</a>
-            <a href="#" class="account-link"><img src="img/cart.svg" width="15" height="15" alt="Корзина"> Корзина</a>
+            <a href="#" class="account-link"><img src="img/compare.svg" width="10" height="10" alt="Сравнить"> Сравнить</a>
+            <a href="#" class="account-link"><img src="img/cart.svg" width="10" height="10" alt="Корзина"> Корзина</a>
           </div>
         </div>
       </div> <!--header-action is end-->
@@ -92,15 +91,16 @@
         </div>
       </div>
       <ul class="site-navigation">
-        <li class="deliver"><a href="deliver.html">Доставка</a></li>
-        <li class="warranty"><a href="garant.html">Гарантия</a></li>
-        <li class="contacts"><a href="contacts.html">Контакты</a></li>
+        <li class="deliver"><a href="deliver.html" class="more-action">Доставка</a></li>
+        <li class="warranty"><a href="garant.html" class="more-action">Гарантия</a></li>
+        <li class="contacts"><a href="contacts.html" class="more-action">Контакты</a></li>
       </ul>
       </nav>
     </section>
     </header>
     <main class="main">
       <section class="showcase">
+        <div class="container">
         <div class="slideshow-container">
           <div class="products">
             <ul class="slides">
@@ -116,7 +116,7 @@
                  Самая длинная палка для селфи доступная в насшем магазине.<br>
                  Восемь (Восемь, Карл) метров длиной и весом всего 5 килограмм.
                </p>
-               <a href="product1.html">Подробнее</a>
+               <a href="product1.html" class="more-action">Подробнее</a>
                <table class="info">
                  <tr>
                    <td>8,5 м</td>
@@ -143,7 +143,7 @@
                   Мотивирующий фитнес-браслеты помогут найти в себе силы<br>
                   не пропускать занятия и соблюдать диету.
                 </p>
-                <a href="product2.html">Подробнее</a>
+                <a href="product2.html" class="more-action">Подробнее</a>
                 <table class="info">
                   <tr>
                      <td>48 часов</td>
@@ -166,7 +166,7 @@
                  Это обычный, на перывый взгляд, квадракоптер оснащен<br>
                  мощным лазером замаскированным под стандартную камеру.
                </p>
-              <a href="product3.html">Подробнее</a>
+              <a href="product3.html" class="more-action">Подробнее</a>
               <table class="info">
                 <tr>
                   <td>800 м</td>
@@ -187,8 +187,10 @@
             </ul>
           </div>
           </div>
+        </div>
       </section>
       <div class="popular">
+        <div class="container">
         <ul class="popular-list">
           <li class="popular-item">
             <a href="#">
@@ -245,11 +247,13 @@
           </li>
         </ul>
       </div>
+      </div>
       <section class="services">
+        <div class="container">
         <ul class="services-name">
-          <li><a href="#delivery">Доставка</a></li>
-          <li><a href="#warranty">Гарантия</a></li>
-          <li><a href="#credit">Кредит</a></li>
+          <li><a href="#delivery" class="more-action">Доставка</a></li>
+          <li><a href="#warranty" class="more-action">Гарантия</a></li>
+          <li><a href="#credit" class="more-action">Кредит</a></li>
         </ul>
         <div id="delivery">
           <h2 class="services-title">
@@ -286,8 +290,10 @@
           </p>
           <img src="img/credit.svg" alt="Кредит" width="200" height="200">
         </div>
+       </div>
       </section>
       <div class="logos">
+        <div class="container">
         <ul class="logos-list">
           <li class="logos-items"><img src="img/logo-1.jpg" alt="dji" width="260" height="100"></li>
           <li class="logos-items"><img src="img/logo-2.jpg" alt="SPGadgets" width="260" height="100"></li>
@@ -295,7 +301,8 @@
           <li class="logos-items"><img src="img/logo-4.jpg" alt="VIVE" width="260" height="100"></li>
         </ul>
       </div>
-      <div>
+      <div class="">
+      <div class="container">
       <section class="about-us">
         <h2>О нас</h2>
         <p>
@@ -311,7 +318,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="about-us-more.html" class="about-us-action">Подробнее о нас</a>
+        <a href="about-us-more.html" class="more-action">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2>Контакты</h2>
@@ -331,16 +338,20 @@
             </div>
           </section>
         </div>
+        </div>
         <div class="write-container">
-          <a href="write-us" class="contacts-action">Напишите нам</a>
+          <div class="container">
+          <a href="write-us" class="more-action">Напишите нам</a>
+          </div>
         </div>
       </section>
     </div>
     </main>
     <footer class="main-footer">
+      <div class="container">
       <div class="footer-top">
        <a class="main-header-logo" href="index.html"><img src="img/logov2.png" alt="DEVICE"></a>
-       <ul class="footer-top">
+       <ul class="footer-action">
          <li class="activity-button"><a class="login-button" href="login.html"><img src="img/user-color.svg" alt="Войти" width="13" height="12">Войти</a></li>
          <li class="activity-button"><a class="compare-button" href="compare.html"><img src="img/compare-color.svg" alt="Сравнить" width="10" height="10">Сравнить</a></li>
          <li class="activity-button"><a class="button basket-button" href="basket.html"><img src="img/cart-color.svg" alt="Корзина" width="12" height="12">Корзина</a></li>
@@ -365,6 +376,7 @@
           <img src="img/logo-html.svg" alt="htmlacademy" width="27" height="37">
         </a>
       </div>
+    </div>
     </footer>
     <section class="write-popup">
       <div class="write-popup-content">
@@ -374,7 +386,7 @@
           </p>
           <p class="write-us-items">
             <label class="write-us-name" for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="  Представтесь, пожалуйста">
+            <input type="text" name="name" id="name" placeholder="  Представьтесь, пожалуйста">
           </p>
           <p class="write-us-items">
             <label class="write-us-name" for="email">Ваш e-mail:</label>

@@ -8,10 +8,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <section class="inside-header">
+    <header class="container">
+      <section class="main-header">
       <!--<nav class="main-navigation">-->
-      <a class="main-header-logo" href="index.html"><img src="img/logo.png" alt="DEVICE"></a>
+      <a class="main-header-logo" href="index.html">DEVICE</a>
       <div class="header-action">
         <form action="https://echo.htmlacademy.ru" method="post" class="header-search">
           <p class="header-search-items">
@@ -21,48 +21,15 @@
         </form>
         <div class="account-action">
           <div class="account-login">
-            <a href="#" class="account-link"><img src="img/user.svg" width="15" height="15" alt="Войти"> Войти</a>
+            <a href="#" class="account-link"><img src="img/user.svg" width="13" height="12" alt="Войти"> Войти</a>
           </div>
           <div class="account-activity">
-            <a href="#" class="account-link"><img src="img/compare.svg" width="15" height="15" alt="Сравнить"> Сравнить</a>
-            <a href="#" class="account-link"><img src="img/cart.svg" width="15" height="15" alt="Корзина"> Корзина</a>
+            <a href="#" class="account-link"><img src="img/compare.svg" width="10" height="10" alt="Сравнить"> Сравнить</a>
+            <a href="#" class="account-link"><img src="img/cart.svg" width="12" height="12" alt="Корзина"> Корзина</a>
           </div>
         </div>
       </div> <!--header-action is end-->
       <nav class="main-nav">
-      <!-- как вариант
-        <div class="catalog-menu">
-          <ul class="catalog-menu-heading">
-            <li><a href="#" class="catalog-menu-link">Каталог</a></li>
-            <li><button type="button" class="catalog-menu-toggle"><img src="img/plus.svg" alt="+" height="10" width="10"></button></li>
-
-            <li class="deliver"><a href="deliver.html">Доставка</a></li>
-            <li class="warranty"><a href="garant.html">Гарантия</a></li>
-            <li class="contacts"><a href="contacts.html">Контакты</a></li>
-           </ul>
-            <div class="catalog-menu-dropdown">
-              <ul class="catalog-menu-dropdown-li">
-                <li>
-                  <ul class="catalog-menu-dropdown-menu first">
-                    <li><a href="vr.html">Вертуальная реальность</a></li>
-                    <li><a href="monopods.html">Моноподы для селфи</a></li>
-                    <li><a href="acameras.html">Экшен камеры</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <ul class="catalog-menu-dropdown-menu second">
-                    <li><a href="fit-drslt.html">Фитнес браслеты</a></li>
-                    <li><a href="smart-watches.html">Умные часы</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <ul class="catalog-menu-dropdown-menu third">
-                    <li><a href="copters.html">Квадракоптеры</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          -->
       <div class="catalog-menu">
         <div class="catalog-menu-heading">
           <a href="#" class="catalog-menu-link">Каталог товаров</a>
@@ -92,14 +59,14 @@
         </div>
       </div>
       <ul class="site-navigation">
-        <li class="deliver"><a href="deliver.html">Доставка</a></li>
-        <li class="warranty"><a href="garant.html">Гарантия</a></li>
-        <li class="contacts"><a href="contacts.html">Контакты</a></li>
+        <li class="deliver-nav"><a href="deliver.html">Доставка</a></li>
+        <li class="warranty-nav"><a href="garant.html">Гарантия</a></li>
+        <li class="contacts-nav"><a href="contacts.html">Контакты</a></li>
       </ul>
       </nav>
     </section>
     </header>
-    <main class="main">
+    <main class="container">
       <section class="catalog">
       <h1 class="page-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs"> <!--хлебные -->
@@ -121,7 +88,7 @@
            <legend class="color-legend">Цвет</legend>
            <div class="cheackbox">
              <ul class="color-list">
-              <li> <!--проблема!-->
+              <li>
                 <input type="checkbox" name="checkbox" id="color-1" value="Черный">
                 <label class="color-name" for="color-1">Черный</label>
               </li>
@@ -154,7 +121,7 @@
             <label class="have-not" for="have-not">Нет</label>
            </div>
          </fieldset>
-         <button class="filter-botton" type="submit">Показать</button>
+         <button class="filter-botton more-action" type="submit">Показать</button>
         </div>
       </section>
       <section class="main">
