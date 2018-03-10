@@ -89,29 +89,41 @@
         </div>
       </div>
       <ul class="site-navigation">
-        <li class="deliver"><a href="deliver.html" class="more-action">Доставка</a></li>
-        <li class="warranty"><a href="garant.html" class="more-action">Гарантия</a></li>
-        <li class="contacts"><a href="contacts.html" class="more-action">Контакты</a></li>
+        <li class="deliver"><a href="deliver.html">Доставка</a></li>
+        <li class="warranty"><a href="garant.html">Гарантия</a></li>
+        <li class="contacts"><a href="contacts.html">Контакты</a></li>
       </ul>
       </nav>
     </section>
     </header>
     <main class="main">
+      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="product-3" name="toggle">
       <section class="showcase">
         <div class="container">
         <div class="slideshow-container">
           <div class="products">
+
+            <div class="slider-controls">
+              <label for="product-1">Первый</label>
+              <label for="product-2">Второй</label>
+              <label for="product-3">Третий</label>
+            </div>
+
+
             <ul class="slides">
-              <li class="slides-item slide-active">
+              <li class="slides-item" id="slide1" >
+                <!-- style="display: block;"> -->
                <a href="product1.html" class="slides-edit"><img src="img/slider-1.png" alt="Селфи палка" height="486" width="384"></a>
                <div class="product-description">
                 <div class="slider-count">01</div>
                 <h1 class="name-item">
                  Делай селфи,<br>
-                 как Бен Стиллгер!
+                 как Бен Стиллер!
                 </h1>
                 <p class="about-item">
-                 Самая длинная палка для селфи доступная в насшем магазине.<br>
+                 Самая длинная палка для селфи доступна в нашем магазине.<br>
                  Восемь (Восемь, Карл) метров длиной и весом всего 5 килограмм.
                </p>
                <div class="more-button">
@@ -131,7 +143,7 @@
                </table>
               </div>
              </li>
-            <li class="slides-item">
+              <li class="slides-item" id="slide2">
                 <a href="product2.html" class="slides-edit"><img src="img/slider-2.png" alt="Фитнес браслет" height="485" width="345"></a>
                 <div class="product-description">
                 <div class="slider-count">02</div>
@@ -156,12 +168,12 @@
                 </table>
                 </div>
              </li>
-             <li class="slides-item">
-                <a href="product3.html" class="slides-edit"><img src="img/slider-3.png" alt="Фитнес браслет" height="334" width="562"></a>
+             <li class="slides-item" id="slide3">
+                <a href="product3.html" class="slides-edit"><img src="img/slider-3.png" alt="Фитнес браслет" height="312" width="526"></a>
                 <div class="product-description">
                 <div class="slider-count">03</div>
                 <h1 class="name-item">
-                   Пархет как бабочка,<br>
+                   Порхает как бабочка,<br>
                    жалит как пчела.
                 </h1>
                 <p class="about-item">
@@ -184,11 +196,11 @@
             </div>
             </li>
             </ul>
-            <ul class="radio">   <!--использовать список с input type="radio"-->
-              <li><input type="radio" name="product" checked></li>
-              <li><input type="radio" name="product"></li>
-              <li><input type="radio" name="product"></li>
-            </ul>
+            <!-- <div class="slider-controls">
+              <i class="active">o</i>
+              <i>o</i>
+              <i>o</i>
+            </div> -->
           </div>
           </div>
         </div>
@@ -255,15 +267,12 @@
       <section class="services">
         <div class="container">
         <ul class="services-name">
-          <div class="more-line_small"></div>
           <li class="more-button">
             <label class="more-action" for="delivery">Доставка</label>
           </li>
-          <div class="more-line_small"></div>
           <li class="more-button">
             <label class="more-action" for="warranty">Гарантия</label>
           </li>
-          <div class="more-line_small"></div>
           <li class="more-button">
             <label class="more-action" for="credit">Кредит</label>
           </li>
@@ -308,12 +317,13 @@
       </section>
       <section class="logos">
         <div class="container">
-        <ul class="logos-list">
-          <li class="logos-items"><img src="img/logo-1.jpg" alt="dji" width="260" height="100"></li>
-          <li class="logos-items"><img src="img/logo-2.jpg" alt="SPGadgets" width="260" height="100"></li>
-          <li class="logos-items"><img src="img/logo-3.jpg" alt="GoPro" width="260" height="100"></li>
-          <li class="logos-items"><img src="img/logo-4.jpg" alt="VIVE" width="260" height="100"></li>
-        </ul>
+          <ul class="logos-list">
+            <li class="logos-items"><img src="img/logo-1.jpg" alt="dji" width="260" height="100"></li>
+            <li class="logos-items"><img src="img/logo-2.jpg" alt="SPGadgets" width="260" height="100"></li>
+            <li class="logos-items"><img src="img/logo-3.jpg" alt="GoPro" width="260" height="100"></li>
+            <li class="logos-items"><img src="img/logo-4.jpg" alt="VIVE" width="260" height="100"></li>
+          </ul>
+        </div>
       </section>
       <section class="about-company">
         <div class="container">
@@ -336,7 +346,7 @@
               <a href="about-us-more.html" class="more-action">Подробнее о нас</a>
             </div>
           </section>
-          <section class="about-contacts">
+          <section class="about-contacts" >
             <h2>Контакты</h2>
             <p>
               Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
@@ -349,15 +359,12 @@
                 <div class="map-popup-content">
                   <img src="img/map-big.jpg" alt="Офис компании по адресу ул.Строителей дом 15, Москва.">
                   <button class="map-popup-botton" type="button"><img src="img/modal-close.svg" alt="x" width="55" height="55"></button>
-                </div>
-              </section> -->
+                </div>-->
             </div>
             <div class="write-pop-up more-button">
               <a href="write-us" class="more-action">Напишите нам</a>
             </div>
-            </div>
-          </div>
-        </section>
+          </section>
       </div>
     </section>
     </main>
