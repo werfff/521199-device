@@ -574,7 +574,6 @@ p {  /* все параграфы */
 }
 .slides table{  /* table слайдов */
   font-weight: 100;
-  font-family: 'gilroy light', "Arial", sans-serif;
 
 }
 .slides tr:first-child {  /* первая строка таблицы слайдов */
@@ -1188,14 +1187,15 @@ catalog.html
 .catalog {    /* контейнер каталога */
 
 }
-.catalog-title h1 {
-    margin-top: 33px;
-    margin-bottom: 20px;
-    margin-left: 60px;
-    letter-spacing: .012em;
-    font-size: 47px;
-    font-family: "Gilroy","Arial",sans-serif;
-    color: #000;
+.catalog-title h2 {
+  line-height: 58px;
+  margin-top: 33px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  letter-spacing: .012em;
+  font-size: 47px;
+  font-family: "Gilroy","Arial",sans-serif;
+  color: #000;
 }
 .breadcrumbs {    /* хлебные крошки - уровни страницы */
   list-style: none;
@@ -1766,10 +1766,10 @@ transition: 0.15s ease-out;
    list-style: none;
    margin-top: 175px;
    padding: 0;
+   color: rgba(0,0,0,.5);
  }
 
 .more-action-1{
-  width: 200px;
   text-transform: uppercase;
   color: #000000;
   font-size: 18px;
