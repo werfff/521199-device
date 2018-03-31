@@ -5,11 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script>
-    $('.map').on('click', function(){
-         $('.map-popup').css('display','block');
-    });
-    </script>
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="container">
@@ -40,39 +36,6 @@
         </div>
       </div> <!--header-action is end-->
       <nav class="main-nav">
-      <!-- как вариант
-        <div class="catalog-menu">
-          <ul class="catalog-menu-heading">
-            <li><a href="#" class="catalog-menu-link">Каталог</a></li>
-            <li><button type="button" class="catalog-menu-toggle"><img src="img/plus.svg" alt="+" height="10" width="10"></button></li>
-
-            <li class="deliver"><a href="deliver.html">Доставка</a></li>
-            <li class="warranty"><a href="garant.html">Гарантия</a></li>
-            <li class="contacts"><a href="contacts.html">Контакты</a></li>
-           </ul>
-            <div class="catalog-menu-dropdown">
-              <ul class="catalog-menu-dropdown-li">
-                <li>
-                  <ul class="catalog-menu-dropdown-menu first">
-                    <li><a href="vr.html">Вертуальная реальность</a></li>
-                    <li><a href="monopods.html">Моноподы для селфи</a></li>
-                    <li><a href="acameras.html">Экшен камеры</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <ul class="catalog-menu-dropdown-menu second">
-                    <li><a href="fit-drslt.html">Фитнес браслеты</a></li>
-                    <li><a href="smart-watches.html">Умные часы</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <ul class="catalog-menu-dropdown-menu third">
-                    <li><a href="copters.html">Квадракоптеры</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          -->
       <div class="catalog-menu">
         <div class="catalog-menu-heading">
           <a href="#" class="catalog-menu-link">Каталог товаров</a>
@@ -81,7 +44,7 @@
             <li>
               <ul class="catalog-menu-dropdown-menu first">
                 <li><a href="vr.html">Вертуальная реальность</a></li>
-                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                <li><a href="monopods.html">Моноподы для селфи</a></li>
                 <li><a href="acameras.html">Экшен камеры</a></li>
               </ul>
             </li>
@@ -228,7 +191,7 @@
           </div>
         </div>
       </section>
-      <div class="popular">
+      <section class="popular">
         <div class="container">
         <ul class="popular-list">
           <li class="popular-item">
@@ -288,7 +251,7 @@
           </li>
         </ul>
       </div>
-      </div>
+      </section>
       <section class="services">
 
 

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!--<link href="font/gilroy-extrabold.otf" rel="stylesheet">-->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
@@ -21,7 +20,9 @@
         </form>
         <div class="account-action">
           <div class="account-login">
-            <a href="#" class="account-link"><img src="img/user.svg" alt="Войти"> Войти</a>
+            <img src="img/user.svg" alt="Войти">
+            <a class="enter" href="profile.html">Валентин Петухов</a>
+            <a class="exit" href="logout.html">Выйти</a>
           </div>
           <div class="account-activity">
             <a href="#" class="account-link"><img src="img/compare.svg" alt="Сравнить"> Сравнить</a>
@@ -38,7 +39,7 @@
             <li>
               <ul class="catalog-menu-dropdown-menu first">
                 <li><a href="vr.html">Вертуальная реальность</a></li>
-                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                <li><a href="monopods.html">Моноподы для селфи</a></li>
                 <li><a href="acameras.html">Экшен камеры</a></li>
               </ul>
             </li>
@@ -72,8 +73,6 @@
             <input class="visually-hidden" type="checkbox" id="color-4" name="checkbox" checked>
             <input class="visually-hidden" type="checkbox" id="color-5" name="checkbox"> -->
 
-            <input class="visually-hidden" type="radio" id="ava-1" name="ava-radio" value="Есть" checked>
-            <input class="visually-hidden" type="radio" id="ava-2" name="ava-radio" value="Нет">
 
             <input class="visually-hidden" type="radio" id="sort-1" name="sort-radio" checked>
             <input class="visually-hidden" type="radio" id="sort-2" name="sort-radio" >
@@ -83,11 +82,14 @@
             <input class="visually-hidden" type="radio" id="arrow-2" name="sort-arrow" checked>
 
 
-            <div class="catalog-main-color"></div>
+            <!-- <div class="catalog-main-color"></div> -->
 
 
-      <section class="catalog container">
-        <div class="catalog-container">
+
+        <section class="catalog">
+          <section class="catalog-title">
+          <div class="container">
+
           <h1 class="page-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs"> <!--хлебные -->
             <li><a href="index.html">Главная</a></li>
@@ -96,69 +98,13 @@
             <li><img src="img/nav-arrow.svg" alt="" width="4" height="7"></li>
             <li><a href="monopod.html">Моноподы для селфи</a></li>
           </ul>
-          <section class="catalog-body">
-            <section class="filter">
-              <div class="filter-color"></div>
-              <h2 class="filter-title">Фильтр:</h2>
-              <form class="filter-body">
-                <div class="filter-body-color"></div>
-               <div class="value">
-                 <div class="filter-range">
-                  <div class="filter-range-title">Стоимость:</div>
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="range-toggle range-toggle-min"></div>
-                    <div class="range-toggle range-toggle-max"></div>
 
-                    <div class="price-controls">
-                      <label class="min-price"><input type="text" name="min-price" value="от 0"></label>
-                      <label class="max-price"><input type="text" name="max-price" value="до 5000"></label>
-                    </div>
-                  </div>
-                </div> <!-- HELP -->
-               </div>
-               <div class="color">
-                 <legend class="color-legend">Цвет</legend>
-                 <div class="cheackbox">
-                   <div class="color-list">
-                       <input class="visually-hidden" type="checkbox" id="color-1" name="checkbox" checked>
-                       <input class="visually-hidden" type="checkbox" id="color-2" name="checkbox">
-                       <input class="visually-hidden" type="checkbox" id="color-3" name="checkbox" checked>
-                       <input class="visually-hidden" type="checkbox" id="color-4" name="checkbox" checked>
-                       <input class="visually-hidden" type="checkbox" id="color-5" name="checkbox">
+          </div>
+          </section>
 
-                        <!-- <input type="checkbox" name="checkbox" id="color-1" value="Черный"> -->
-                        <label class="color-name" for="color-1">Черный</label>
-                        <!-- <input type="checkbox" name="checkbox" id="color-2" value="Белый"> -->
-                        <label class="color-name" for="color-2">Белый</label>
-                        <!-- <input type="checkbox" name="checkbox" id="color-3" value="Синий"> -->
-                        <label class="color-name" for="color-3">Синий</label>
-                        <!-- <input type="checkbox" name="checkbox" id="color-4" value="Красный"> -->
-                        <label class="color-name" for="color-4">Красный</label>
-                        <!-- <input type="checkbox" name="checkbox" id="color-5" value="Розовый"> -->
-                        <label class="color-name" for="color-5">Розовый</label>
-                   </div>
-                 </div>
-               </div>
-               <div class="bluetooth">
-                 <legend class="bluetooth-legend">Bluetooth</legend>
-                 <div class="availability">
-                     <label class="ava-radio" for="ava-1">Есть</label>
-                     <label class="ava-radio" for="ava-2">Нет</label>
-                </div>
-              </div>
-               <button class="filter-botton more-action" type="submit">Показать</button>
-             </form>
-            </section>
-
-
-
-            <section class="catalog-main">
-
-              <!-- <div class="catalog-main-color"></div> -->
-
+          <section class="tittles-wr">
+            <div class="container">
+              <h2 class="filter-tittle">Фильтр:</h2>
               <div class="sort">
                 <h2 class="sort-title">Сортировка:</h2>
                 <div class="sort-level">
@@ -171,7 +117,67 @@
                   <label class="button" type="submit" for="arrow-2"><img src="img/icon-down-dir.svg" alt="down"></label>
                 </div>
               </div>
-              <div class="catalog">
+            </div>
+          </section>
+
+
+          <section class="catalog-body">
+            <div class="height-alignment container">
+
+              <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+                <!-- <div class="filter-body-color"></div> -->
+               <fieldset>
+                  <legend class="form-legend">Стоимость</legend>
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price"><input type="text" name="min-price" value="от 0"></label>
+                    <label class="max-price"><input type="text" name="max-price" value="до 5000"></label>
+                  </div>
+                </fieldset>
+               <fieldset class="color">
+                 <legend class="form-legend">Цвет</legend>
+
+                       <input class="visually-hidden" type="checkbox" id="color-1" name="black" checked>
+
+                        <label class="color-name" for="color-1">Черный</label>
+
+                        <input class="visually-hidden" type="checkbox" id="color-2" name="white">
+
+                        <label class="color-name" for="color-2">Белый</label>
+
+                        <input class="visually-hidden" type="checkbox" id="color-3" name="blue" checked>
+
+                        <label class="color-name" for="color-3">Синий</label>
+
+                        <input class="visually-hidden" type="checkbox" id="color-4" name="red" checked>
+
+                        <label class="color-name" for="color-4">Красный</label>
+
+                        <input class="visually-hidden" type="checkbox" id="color-5" name="pink">
+
+                        <label class="color-name" for="color-5">Розовый</label>
+
+               </fieldset>
+               <fieldset class="bluetooth">
+                 <legend class="form-legend">Bluetooth</legend>
+                 <div class="availability">
+                   <input class="visually-hidden" type="radio" id="ava-1" name="ava-radio" value="have" checked>
+                   <input class="visually-hidden" type="radio" id="ava-2" name="ava-radio" value="don&#8242;t have">
+                     <label class="ava-radio" for="ava-1">Есть</label>
+
+                     <label class="ava-radio" for="ava-2">Нет</label>
+                </div>
+              </fieldset>
+               <button class="filter-botton more-action" type="submit">Показать</button>
+             </form>
+
+            <section class="catalog-main">
                 <h2 class="visually-hidden">Список товаров</h2>
                 <div class="catalog-list">
                     <article class="catalog-item"> <!-- Товары -->
@@ -213,7 +219,7 @@
                         <span class="catalog-item-price">2500 руб.</span>
                       </a>
                     </article>
-                    <article class="catalog-item">
+                    <article class="catalog-item new">
                       <a href="catalog-item.html">
                         <img src="img/item-4.jpg" width="360" height="380" alt="Cелфи-палка «Следуй за мной»">
                         <div class="catalog-item-active line-2">
@@ -236,11 +242,10 @@
                    </ul>
                    <a class="next" href="#">Вперед</a>
                 </div>
-              </div>
+
             </section>
           </section>
-        </div>
-      </section>
+        </section>
     </main>
     <footer class="main-footer">
       <div class="container">
