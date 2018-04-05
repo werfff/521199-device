@@ -255,6 +255,7 @@ ul.navigation-list li{display:inline;margin-right:30px}
 .slides-edit li:nth-child(2) img{top: -40px;position: relative;left: 57px;}
 .slides li:nth-child(3) img{top:35px;position:relative;left:-37px}
 .map-popup{display:none;border:5px solid #f7e296;position:fixed;margin:0 auto;top:50%;left:50%;width:960px;height:559px;box-shadow:-40px 0 40px -40px rgba(2,4,6,.6),40px 0 40px -40px rgba(2,4,6,.6),0 8px 20px 2px rgba(2,4,6,.2);-webkit-transform:translate(-50%,-50%)}
+.map-popup iframe{border:0;}
 .popup-close-botton{position:absolute;top:22px;right:22px;border:0;background-color:#ffffff00;opacity:.5}
 .popup-close-botton:hover{opacity:.9}
 .active-popup:active{display:block}

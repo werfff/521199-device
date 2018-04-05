@@ -1654,6 +1654,10 @@ box-shadow:-40px 0 40px -40px rgba(2,4,6,.6),40px 0 40px -40px rgba(2,4,6,.6),0 
 -webkit-transform:translate(-50%,-50%)
 }
 
+.map-popup iframe {
+  border:0;
+}
+
 .popup-close-botton {
 position:absolute;
 top:22px;
