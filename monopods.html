@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
@@ -67,13 +66,6 @@
     </header>
     <main class="main">
 
-            <!-- <input class="visually-hidden" type="checkbox" id="color-1" name="checkbox" checked>
-            <input class="visually-hidden" type="checkbox" id="color-2" name="checkbox">
-            <input class="visually-hidden" type="checkbox" id="color-3" name="checkbox" checked>
-            <input class="visually-hidden" type="checkbox" id="color-4" name="checkbox" checked>
-            <input class="visually-hidden" type="checkbox" id="color-5" name="checkbox"> -->
-
-
             <input class="visually-hidden" type="radio" id="sort-1" name="sort-radio" checked>
             <input class="visually-hidden" type="radio" id="sort-2" name="sort-radio" >
             <input class="visually-hidden" type="radio" id="sort-3" name="sort-radio" >
@@ -81,26 +73,20 @@
             <input class="visually-hidden" type="radio" id="arrow-1" name="sort-arrow" >
             <input class="visually-hidden" type="radio" id="arrow-2" name="sort-arrow" checked>
 
-
-            <!-- <div class="catalog-main-color"></div> -->
-
-
-
         <section class="catalog">
           <h2 class="visually-hidden">Раздел "Каталог"</h2>
           <section class="catalog-title">
-          <div class="container">
+            <div class="container">
+              <h2 class="page-title">Моноподы для селфи</h2>
+              <ul class="breadcrumbs"> <!--хлебные -->
+                <li><a href="index.html">Главная</a></li>
+                <li><img src="img/nav-arrow.svg" alt="" width="4" height="7"></li>
+                <li><a href="calatog.html">Каталог товаров</a></li>
+                <li><img src="img/nav-arrow.svg" alt="" width="4" height="7"></li>
+                <li><a href="monopod.html">Моноподы для селфи</a></li>
+              </ul>
 
-          <h2 class="page-title">Моноподы для селфи</h2>
-          <ul class="breadcrumbs"> <!--хлебные -->
-            <li><a href="index.html">Главная</a></li>
-            <li><img src="img/nav-arrow.svg" alt="" width="4" height="7"></li>
-            <li><a href="calatog.html">Каталог</a></li>
-            <li><img src="img/nav-arrow.svg" alt="" width="4" height="7"></li>
-            <li><a href="monopod.html">Моноподы для селфи</a></li>
-          </ul>
-
-          </div>
+            </div>
           </section>
 
           <section class="tittles-wr">
@@ -109,13 +95,18 @@
               <div class="sort">
                 <h2 class="sort-title">Сортировка:</h2>
                 <div class="sort-level">
-                  <label class="level-text" for="sort-1">По цене</label>
+                  <a class="level-text" href="#">По цене</a>
+                  <a class="level-text" href="#">По типу</a>
+                  <a class="level-text" href="#">По популярности</a>
+                  <!-- <label class="level-text active-selector" for="sort-1">По цене</label>
                   <label class="level-text" for="sort-2">По типу</label>
-                  <label class="level-text" for="sort-3">По популярности</label>
+                  <label class="level-text" for="sort-3">По популярности</label> -->
                 </div>
                 <div class="arrows">
-                  <label class="button" for="arrow-1"><img src="img/icon-up-dir.svg" alt="up" height="12" width="12"></label>
-                  <label class="button" for="arrow-2"><img src="img/icon-down-dir.svg" alt="down" height="12" width="12"></label>
+                  <!-- <label class="button" for="arrow-1"><img src="img/icon-up-dir.svg" alt="up" height="12" width="12"></label>
+                  <label class="button" for="arrow-2"><img src="img/icon-down-dir.svg" alt="down" height="12" width="12"></label> -->
+                  <a class="button" href="#"><img src="img/icon-up-dir.svg" alt="up" height="12" width="12"></a>
+                  <a class="button" href="#"><img src="img/icon-down-dir.svg" alt="down" height="12" width="12"></a>
                 </div>
               </div>
             </div>
@@ -145,25 +136,25 @@
                <fieldset class="color">
                  <legend class="form-legend">Цвет</legend>
 
-                       <input class="visually-hidden" type="checkbox" id="color-1" name="black" checked>
+                 <input class="visually-hidden" type="checkbox" id="color-1" name="black" checked>
 
-                        <label class="color-name" for="color-1">Черный</label>
+                 <label class="color-name" for="color-1">Черный</label>
 
-                        <input class="visually-hidden" type="checkbox" id="color-2" name="white">
+                 <input class="visually-hidden" type="checkbox" id="color-2" name="white">
 
-                        <label class="color-name" for="color-2">Белый</label>
+                 <label class="color-name" for="color-2">Белый</label>
 
-                        <input class="visually-hidden" type="checkbox" id="color-3" name="blue" checked>
+                 <input class="visually-hidden" type="checkbox" id="color-3" name="blue" checked>
 
-                        <label class="color-name" for="color-3">Синий</label>
+                 <label class="color-name" for="color-3">Синий</label>
 
-                        <input class="visually-hidden" type="checkbox" id="color-4" name="red" checked>
+                 <input class="visually-hidden" type="checkbox" id="color-4" name="red" checked>
 
-                        <label class="color-name" for="color-4">Красный</label>
+                 <label class="color-name" for="color-4">Красный</label>
 
-                        <input class="visually-hidden" type="checkbox" id="color-5" name="pink">
+                 <input class="visually-hidden" type="checkbox" id="color-5" name="pink">
 
-                        <label class="color-name" for="color-5">Розовый</label>
+                 <label class="color-name" for="color-5">Розовый</label>
 
                </fieldset>
                <fieldset class="bluetooth">
@@ -171,11 +162,11 @@
                  <div class="availability">
                    <input class="visually-hidden" type="radio" id="ava-1" name="ava-radio" value="have" checked>
                    <input class="visually-hidden" type="radio" id="ava-2" name="ava-radio" value="don&#8242;t have">
-                     <label class="ava-radio" for="ava-1">Есть</label>
+                   <label class="ava-radio" for="ava-1">Есть</label>
 
-                     <label class="ava-radio" for="ava-2">Нет</label>
-                </div>
-              </fieldset>
+                   <label class="ava-radio" for="ava-2">Нет</label>
+                 </div>
+               </fieldset>
                <button class="filter-botton more-action" type="submit">Показать</button>
              </form>
 
@@ -249,37 +240,42 @@
             </div>
           </section>
         </section>
-    </main>
-    <footer class="main-footer">
-      <div class="container">
-      <div class="footer-top">
-       <a class="main-footer-logo" href="index.html">DEVICE</a>
-       <ul class="footer-action">
-         <li class="activity-button"><a class="login-button" href="login.html"><img src="img/user-color.png" alt="Войти" height="12" width="12">Войти</a></li>
-         <li class="activity-button"><a class="compare-button" href="compare.html"><img src="img/compare-color.png" alt="Сравнить" height="12" width="12">Сравнить</a></li>
-         <li class="activity-button"><a class="button basket-button" href="basket.html"><img src="img/cart-color.png" alt="Корзина" height="12" width="12">Корзина</a></li>
-       </ul>
+     </main>
+     <footer class="main-footer">
+       <div class="container">
+         <div class="footer-top">
+         <a class="main-footer-logo" href="index.html">DEVICE</a>
+         <ul class="footer-action">
+           <li class="activity-button">
+             <a class="account-link-footer" href="#">
+               <img src="img/user-color.png" alt="Войти" height="12" width="12">
+               Войти
+             </a>
+           </li>
+           <li class="activity-button"><a class="compare-button" href="#"><img src="img/compare-color.png" alt="Сравнить" height="12" width="12">Сравнить</a></li>
+           <li class="activity-button"><a class="button basket-button" href="#"><img src="img/cart-color.png" alt="Корзина" height="12" width="12">Корзина</a></li>
+         </ul>
+        </div>
+        <div class="footer-mid">
+         <span>г.Москва ул.Строителей 15</span>
+         <ul class="footer-mid-services">
+           <li class="services-button"><a>Доставка</a></li>
+           <li class="services-button"><a>Гарантия</a></li>
+           <li class="services-button"><a>Контакты</a></li>
+         </ul>
+         <a href="tel:+74954959595" class="contact-item">Тел. +7 (495) 495-95-95</a>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-bottom">
+            <li class="social-button"><a class="social-button" href="#"><img src="img/fb.svg" alt="Фейсбук" height="32" width="32"></a></li>
+            <li class="social-button"><a class="social-button" href="#"><img src="img/instagram.svg" alt="Инстаграм" height="32" width="32"></a></li>
+            <li class="social-button"><a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер" height="32" width="32"></a></li>
+          </ul>
+          <a href="https://htmlacademy.ru" class="htmlacademy">
+            <img src="img/logo-html.svg" alt="htmlacademy" width="27" height="37">
+          </a>
+        </div>
       </div>
-      <div class="footer-mid">
-       <span class="contact-item">г.Москва ул.Строителей 15</span>
-       <ul class="footer-mid-services">
-         <li class="services-button">Доставка</li>
-         <li class="services-button">Гарантия</li>
-         <li class="services-button">Контакты</li>
-       </ul>
-       <a href="tel:+74954959595" class="contact-item">Тел. +7 (495) 495-95-95</a>
-      </div>
-      <div class="footer-bottom">
-        <ul class="footer-bottom">
-          <li class="social-button"><a class="social-button" href="#"><img src="img/fb.svg" alt="Фейсбук" height="32" width="32"></a></li>
-          <li class="social-button"><a class="social-button" href="#"><img src="img/instagram.svg" alt="Инстаграм" height="32" width="32"></a></li>
-          <li class="social-button"><a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер" height="32" width="32"></a></li>
-        </ul>
-        <a href="https://htmlacademy.ru" class="htmlacademy">
-          <img src="img/logo-html.svg" alt="htmlacademy" width="27" height="37">
-        </a>
-      </div>
-    </div>
     </footer>
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
@@ -304,58 +300,6 @@
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <script>
-      var link = document.querySelector(".account-link");
-
-      var popup = document.querySelector(".modal-login");
-      var close = popup.querySelector(".modal-close");
-
-      var form = popup.querySelector("form");
-      var login = popup.querySelector("[name=login]");
-      var password = popup.querySelector("[name=password]");
-
-      var storage = localStorage.getItem("login");
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-        login.focus();
-        if (storage) {
-          login.value = storage;
-          password.focus();
-          } else {
-          login.focus();
-    }
-      });
-
-
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      });
-
-      form.addEventListener("submit", function (evt) {
-        if (!login.value || !password.value) {
-          evt.preventDefault();
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          console.log("Нужно ввести логин и пароль");
-          popup.classList.add("modal-error");
-        }
-        else {
-          localStorage.setItem("login", login.value);
-        }
-      });
-
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          if (popup.classList.contains("modal-show")) {
-            popup.classList.remove("modal-show");
-            popup.classList.remove("modal-error");
-          }
-        }
-        });
-</script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>
