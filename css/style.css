@@ -384,7 +384,7 @@ width:17px
 }
 
 .catalog-menu-heading {
-width:260px
+width:270px;
 }
 
 ul.catalog-menu-dropdown {
@@ -437,43 +437,45 @@ list-style:none;
 padding:0;
 text-align:right;
 float:right;
-transition:.15s ease-out
+transition:.15s ease-out;
 }
 
 .site-navigation a:hover {
-opacity:.5
+opacity:.5;
 }
 
 .site-navigation a:active {
-opacity:.1
+opacity:.1;
 }
 
 .site-navigation li.deliver {
-margin-right:20px
+margin-right:20px;
 }
 
 .site-navigation li.contacts {
-margin-left:97px
+margin-left:97px;
 }
 
 ul.site-navigation {
 margin-top:0;
 position:relative;
-right:-3px
+right:-3px;
+font-weight:700;
+font-family:'Gilroy','Verdana',sans-serif;
 }
 
 ul.site-navigation li {
-display:inline
+display:inline;
 }
 
 a {
 text-decoration:none;
-color:#000
+color:#000;
 }
 
 .showcase {
 position:relative;
-min-height:495px
+min-height:485px;
 }
 
 .slider-count {
@@ -518,6 +520,7 @@ padding-left:10px
 
 .services-right p {
 width:440px;
+height:90px;
 margin:0
 }
 
@@ -567,6 +570,7 @@ font-weight:lighter
 }
 
 .about-item {
+width:470px;
 margin-top:20px;
 margin-bottom:40px
 }
@@ -596,7 +600,6 @@ background-size:14px
 
 .popular {
 position:relative;
-top:-15px;
 font-size:0;
 margin-bottom:150px
 }
@@ -743,6 +746,7 @@ filter:grayscale(0%)
 
 ul.logos-list {
 margin:0;
+width: 1160px;
 padding-left:0;
 margin-bottom:90px
 }
@@ -1597,9 +1601,13 @@ min-height:450px
 .product-description h1 {
 position:relative;
 left:-1px;
+width: 405px;
 letter-spacing:1px;
 margin-top:35px;
 margin-bottom:10px
+}
+.product-description:last-child h1 {
+width: 450px;
 }
 
 .product-description .more-button {

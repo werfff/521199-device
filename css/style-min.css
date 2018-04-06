@@ -58,7 +58,7 @@ a.main-header-logo:active{opacity:.3}
 .catalog-menu-link{margin-right:5px}
 .catalog-menu-toggle{background-color:#f7e296;opacity:.3;border:0;vertical-align:middle;padding:0}
 .catalog-menu-toggle img{height:17px;width:17px}
-.catalog-menu-heading{width:260px}
+.catalog-menu-heading{width:270px}
 ul.catalog-menu-dropdown{margin:0;padding-left:0}
 ul.catalog-menu-dropdown li{display:inline-grid}
 .catalog-menu-dropdown{font-family:'Open Sans','Arial',sans-serif;position:absolute;display:none;margin:0;padding:0;transition:.15s ease-out}
@@ -69,15 +69,15 @@ ul.catalog-menu-dropdown li{display:inline-grid}
 .site-navigation a:active{opacity:.1}
 .site-navigation li.deliver{margin-right:20px}
 .site-navigation li.contacts{margin-left:97px}
-ul.site-navigation{margin-top:0;position:relative;right:-3px}
+ul.site-navigation{margin-top:0;position:relative;right:-3px;font-weight:700;font-family:'Gilroy','Verdana',sans-serif;}
 ul.site-navigation li{display:inline}
 a{text-decoration:none;color:#000}
-.showcase{position:relative;min-height:495px}
+.showcase{position:relative;min-height:485px;}
 .slider-count{position:absolute;right:-15px;top:0;font-size:179px;color:#fff;margin-top:20px;letter-spacing:4px}
 .slides{color:#000;list-style:none;padding:0;margin:0}
 .services{display:flex;position:relative;margin:0;padding:0;min-height:288px;margin-bottom:65px;background-color:#e5e5e5}
 .services-right{position:relative;top:-80px;left:30px;margin:0;display:none;float:right;width:715px;height:280px;padding-top:10px;padding-left:10px}
-.services-right p{width:440px;margin:0}
+.services-right p{width:440px;height:90px;margin:0}
 .services-right img{float:right;position:relative;top:-168px;right:52px;width:136px;height:164px}
 h1,.services-title{color:#000;font-size:47px;line-height:normal;margin-bottom:0}
 .services-title{margin-bottom:30px}
@@ -85,11 +85,11 @@ p{font-family:'Open Sans',"Arial",sans-serif;font-weight:lighter;color:#464646;f
 .slides table{font-weight:100}
 .slides tr:first-child{font-size:36px}
 .slides tr:last-child{color:#464646;font-size:16px;line-height:40px;font-family:'Open Sans',"Arial",sans-serif;font-weight:lighter}
-.about-item{margin-top:20px;margin-bottom:40px}
+.about-item{width:470px;margin-top:20px;margin-bottom:40px}
 .slides-item{display:none}
 .slider-controls{position:absolute;top:285px;right:0;z-index:20;font-size:0}
 .slider-controls label{display:inline-block;width:15px;height:15px;margin-right:15px;vertical-align:top;cursor:pointer;background:url(../img/radio-off.svg) 0 0 no-repeat;background-size:14px}
-.popular{position:relative;top:-15px;font-size:0;margin-bottom:150px}
+.popular{position:relative;font-size:0;margin-bottom:150px}
 .popular-list{display:flex;list-style:none;font-size:0;padding-left:0;min-height:160px}
 .popular-list img{height:87px}
 .popular-list li:nth-child(2) img{height:115px;position:relative;bottom:-22px}
@@ -111,7 +111,7 @@ ul.popular-list li:last-child{margin-right:0}
 .services-name a:active{color:#f7e184}
 .logos-list img{list-style:none;letter-spacing:60px;filter:grayscale(100%) opacity(20%);transition:.15s ease-out}
 .logos-list img:hover{filter:grayscale(0%)}
-ul.logos-list{margin:0;padding-left:0;margin-bottom:90px}
+ul.logos-list{margin:0;padding-left:0;width:1160px;margin-bottom:90px}
 ul.logos-list li{position:relative;display:inline-block;width:260px;margin-right:35px;vertical-align:baseline}
 ul.logos-list li:last-child{margin:0}
 .about-company{display:flex;margin-bottom:80px;justify-content:space-between}
@@ -248,6 +248,7 @@ ul.navigation-list li{display:inline;margin-right:30px}
 .navigation-item a:hover{background-color:none}
 .product-description{display:inline-block;float:right;width:511px;position:relative;left:11px;min-height:450px}
 .product-description h1{position:relative;left:-1px;letter-spacing:1px;margin-top:35px;margin-bottom:10px}
+.product-description:last-child h1{width: 450px;}
 .product-description .more-button{position:relative;left:3px}
 .product-description::before{content:"";position:absolute;top:-10px;left:0;width:100px;height:7px;background-color:#fff}
 .slideshow-container{margin:0 60px;position:relative;top:-69px}
