@@ -1,3 +1,27 @@
+@font-face {
+font-family:'Gilroy';
+font-weight:700;
+src:url(../font/gilroy-extrabold.otf) format("truetype")
+}
+
+@font-face {
+font-weight:lighter;
+font-family:'Gilroy';
+src:url(../font/gilroy-light.otf) format("truetype")
+}
+
+@font-face {
+font-weight:400;
+font-family:'Open Sans';
+src:url(../font/OpenSans-Regular.ttf) format("truetype")
+}
+
+@font-face {
+font-weight:lighter;
+font-family:'Open Sans';
+src:url(../font/OpenSans-Light.ttf) format("truetype")
+}
+
 #product-1:checked ~ .showcase #slide1,#product-2:checked ~ .showcase #slide2,#product-3:checked ~ .showcase #slide3,#services-1:checked ~ .services #delivery,#services-2:checked ~ .services #warranty,#services-3:checked ~ .services #credit,#write-us:checked ~ .about-company #popup-write-us {
 display:block
 }
@@ -43,30 +67,6 @@ font-weight:700;
 color:#000;
 background-color:#fff;
 min-width:1160px
-}
-
-@font-face {
-font-family:'Gilroy';
-font-weight:700;
-src:url(../font/gilroy-extrabold.otf) format("truetype")
-}
-
-@font-face {
-font-weight:lighter;
-font-family:'Gilroy';
-src:url(../font/gilroy-light.otf) format("truetype")
-}
-
-@font-face {
-font-weight:400;
-font-family:'Open Sans';
-src:url(../font/OpenSans-Regular.ttf) format("truetype")
-}
-
-@font-face {
-font-weight:lighter;
-font-family:'Open Sans';
-src:url(../font/OpenSans-Light.ttf) format("truetype")
 }
 
 .container {
@@ -304,11 +304,6 @@ top:-2px
 vertical-align:middle
 }
 
-.account-login a {
-position:relative;
-top:-2px
-}
-
 .account-action a:active {
 opacity:.3
 }
@@ -326,7 +321,7 @@ float:right
 }
 
 .account-activity a:last-child {
-margin-left:40px
+margin-left:37px
 }
 
 .account-link img {
@@ -363,7 +358,7 @@ opacity:.1
 .catalog-menu-link,.site-navigation {
 font-size:18px;
 vertical-align:middle;
-letter-spacing:4px
+letter-spacing:3.6px;
 }
 
 .catalog-menu-link {
@@ -449,11 +444,11 @@ opacity:.1;
 }
 
 .site-navigation li.deliver {
-margin-right:20px;
+margin-right:25px;
 }
 
 .site-navigation li.contacts {
-margin-left:97px;
+margin-left:101px;
 }
 
 ul.site-navigation {
@@ -475,7 +470,7 @@ color:#000;
 
 .showcase {
 position:relative;
-min-height:485px;
+height:485px;
 }
 
 .slider-count {
@@ -570,7 +565,7 @@ font-weight:lighter
 }
 
 .about-item {
-width:470px;
+width:485px;
 margin-top:20px;
 margin-bottom:40px
 }
@@ -1606,8 +1601,8 @@ letter-spacing:1px;
 margin-top:35px;
 margin-bottom:10px
 }
-.product-description:last-child h1 {
-width: 450px;
+.slides-item:last-child h1{
+width: 520px;
 }
 
 .product-description .more-button {
@@ -1870,7 +1865,7 @@ color:rgba(0,0,0,.5)
 text-transform:uppercase;
 color:#000;
 font-size:18px;
-letter-spacing:4px;
+letter-spacing:3.6px;
 text-align:center
 }
 
