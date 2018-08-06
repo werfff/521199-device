@@ -21,7 +21,9 @@ link.addEventListener('click', function(a) {
             popup.classList.remove('modal-error')
     }),
     window.addEventListener('keydown', function(a) {
-        27 === a.keyCode && (popup.classList.contains('modal-show') && (popup.classList.remove('modal-show'), popup.classList.remove('modal-error')), map_modal.classList.contains('modal-show') && map_modal.classList.remove('modal-show'))
+        27 === a.keyCode && (popup.classList.contains('modal-show') && (popup.classList.remove('modal-show'),
+        popup.classList.remove('modal-error')),
+        map_modal.classList.contains('modal-show') && map_modal.classList.remove('modal-show'))
     }),
     form.addEventListener('submit', function(a) {
         nickname.value && email.value && letter.value ? (localStorage.setItem('name', nickname.value), localStorage.setItem('email', email.value)) : (a.preventDefault(), popup.classList.remove('modal-error'), popup.offsetWidth = popup.offsetWidth, popup.classList.add('modal-error'))
