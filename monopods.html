@@ -92,11 +92,11 @@
     </section>
   </header>
   <main class="main">
-    <input checked class="visually-hidden" id="sort-1" name="sort-radio" type="radio">
+    <input checked="" class="visually-hidden" id="sort-1" name="sort-radio" type="radio">
     <input class="visually-hidden" id="sort-2" name="sort-radio" type="radio">
     <input class="visually-hidden" id="sort-3" name="sort-radio" type="radio">
     <input class="visually-hidden" id="arrow-1" name="sort-arrow" type="radio">
-    <input checked class="visually-hidden" id="arrow-2" name="sort-arrow" type="radio">
+    <input checked="" class="visually-hidden" id="arrow-2" name="sort-arrow" type="radio">
     <section class="catalog">
       <h2 class="visually-hidden">Раздел "Каталог"</h2>
       <section class="catalog-title">
@@ -170,16 +170,16 @@
             <fieldset class="color">
               <legend class="form-legend">Цвет</legend>
               <!--  -->
-              <input checked class="visually-hidden" id="color-1" name="black" type="checkbox">
+              <input checked="" class="visually-hidden" id="color-1" name="black" type="checkbox">
               <label class="color-name" for="color-1">Черный</label>
               <!--  -->
               <input class="visually-hidden" id="color-2" name="white" type="checkbox">
               <label class="color-name" for="color-2">Белый</label>
               <!--  -->
-              <input checked class="visually-hidden" id="color-3" name="blue" type="checkbox">
+              <input checked="" class="visually-hidden" id="color-3" name="blue" type="checkbox">
               <label class="color-name" for="color-3">Синий</label>
               <!--  -->
-              <input checked class="visually-hidden" id="color-4" name="red" type="checkbox">
+              <input checked="" class="visually-hidden" id="color-4" name="red" type="checkbox">
               <label class="color-name" for="color-4">Красный</label>
               <!--  -->
               <input class="visually-hidden" id="color-5" name="pink" type="checkbox">
@@ -188,8 +188,8 @@
             <fieldset class="bluetooth">
               <legend class="form-legend">Bluetooth</legend>
               <div class="availability">
-                <input checked class="visually-hidden" id="ava-1" name="ava-radio" type="radio" value="have">
-                <input class="visually-hidden" id="ava-2" name="ava-radio" type="radio" value="don&#8242;t have">
+                <input checked="" class="visually-hidden" id="ava-1" name="ava-radio" type="radio" value="have">
+                <input class="visually-hidden" id="ava-2" name="ava-radio" type="radio" value="don′t have">
                 <label class="ava-radio" for="ava-1">Есть</label>
                 <label class="ava-radio" for="ava-2">Нет</label>
               </div>
@@ -222,7 +222,7 @@
                     </ul>
                   </div>
                   <h3 class="catalog-category">Профессиональная селфи-палка</h3>
-                  <span class="catalog-item-price">1500 руб.</span>
+                  <span class="catalog-item-price">1 500 руб.</span>
                 </a>
               </article>
               <article class="catalog-item">
@@ -235,7 +235,7 @@
                     </ul>
                   </div>
                   <h3 class="catalog-category">Непотопляемая селфи-палка</h3>
-                  <span class="catalog-item-price">2500 руб.</span>
+                  <span class="catalog-item-price">2 500 руб.</span>
                 </a>
               </article>
               <article class="catalog-item new">
@@ -248,7 +248,7 @@
                     </ul>
                   </div>
                   <h3 class="catalog-category">Cелфи-палка «Следуй за мной»</h3>
-                  <span class="catalog-item-price">4900 руб.</span>
+                  <span class="catalog-item-price">4 900 руб.</span>
                 </a>
               </article>
             </div>
@@ -276,9 +276,15 @@
     <div class="container">
       <div class="footer-top">
         <a class="main-footer-logo" href="index.html">DEVICE</a>
-        <ul class="footer-action">
+        <ul class="footer-action footer-user">
           <li class="activity-button">
-            <a class="account-link-footer" href="#"><img alt="Войти" height="12" src="img/user-color.svg" width="12"> Войти</a>
+            <div class="account-login">
+              <img alt="Войти" height="12" src="img/user-color.svg" width="12">
+              <a class="enter" href="profile.html">
+                Валентин Петухов
+              </a>
+              <a class="exit" href="logout.html">Выйти</a>
+            </div>
           </li>
           <li class="activity-button">
             <a class="compare-button" href="#"><img alt="Сравнить" height="12" src="img/compare-color.svg" width="12">Сравнить</a>

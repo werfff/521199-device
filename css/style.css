@@ -1,4 +1,9 @@
+.about-company .more-action::before,
+.about-contacts::before,
+.about-us::before,
+.footer-bottom::after,
 .header-search::before,
+.logistic-li::before,
 .more-action::before,
 .services-name::after {
   content: ""
@@ -86,6 +91,7 @@ body {
 .container2 {
   max-width: 1160px;
   margin: 0 auto;
+  width: 100%;
   position: relative
 }
 .container2 {
@@ -116,6 +122,7 @@ a:hover {
   transition: all .2s ease-in-out
 }
 .account-action,
+.account-action a,
 .catalog-menu,
 .catalog-menu-dropdown,
 .header-search input[type=search],
@@ -132,7 +139,7 @@ a.main-header-logo {
   display: inline-block;
   padding: 9px 14px;
   width: 138px;
-  margin-bottom: 16px;
+  margin-bottom: 16px
 }
 .more-action {
   text-transform: uppercase;
@@ -147,7 +154,7 @@ a.main-header-logo {
 }
 .info {
   margin-top: 35px;
-  margin-left: -4px;
+  margin-left: -4px
 }
 .info td {
   min-width: 156px
@@ -284,19 +291,20 @@ a.main-header-logo:active {
   justify-content: space-between;
   margin-top: 7px
 }
+.about-company,
+.footer-action,
+.footer-top,
+.main-nav {
+  justify-content: space-between
+}
 .account-action a,
 .catalog-menu-heading:hover .catalog-menu-dropdown {
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: lighter
 }
-.about-company,
-.main-nav {
-  justify-content: space-between
-}
 .account-action a {
   color: #000;
-  letter-spacing: .012em;
-  transition: .15s ease-out
+  letter-spacing: .012em
 }
 .account-action .exit {
   opacity: .3;
@@ -466,12 +474,9 @@ a {
   position: relative;
   top: -70px;
   margin-left: 121px;
-  /*! margin:0 auto; */
   display: none;
-  /*! float:right; */
   width: 715px;
-  height: 278px/*! padding-top:10px; */
-  /*! padding-left:10px; */
+  height: 278px
 }
 .services-right p {
   position: relative;
@@ -491,7 +496,7 @@ a {
   right: 19px;
   float: right;
   position: relative;
-  top: -156px;
+  top: -156px
 }
 .services-right:last-child img {
   float: right;
@@ -533,7 +538,7 @@ p {
   font-weight: lighter
 }
 .slides tr:last-child td {
-  width: 110px;
+  width: 110px
 }
 .slides-item:first-child tr:last-child td:last-child {
   position: relative;
@@ -647,8 +652,7 @@ ul.popular-list li:last-child {
   text-transform: uppercase;
   position: relative;
   height: 319px;
-  width: 278px;
-  margin-left: -48px
+  width: 278px
 }
 .services-name::after {
   position: absolute;
@@ -693,7 +697,7 @@ ul.logos-list {
   margin: 0 0 94px;
   padding-left: 0;
   width: 1160px;
-  display: flex;
+  display: flex
 }
 ul.logos-list li {
   position: relative;
@@ -710,10 +714,6 @@ ul.logos-list li:last-child {
   margin: 0 auto 70px;
   display: flex
 }
-.footer-action,
-.footer-top {
-  justify-content: space-between
-}
 .about-company p {
   margin-top: 0;
   margin-bottom: 31px;
@@ -729,7 +729,7 @@ ul.logos-list li:last-child {
 .about-us h2 {
   margin-bottom: 50px;
   margin-top: 53px;
-  font-size: 47px;
+  font-size: 47px
 }
 .about-us .logistic {
   margin-top: 65px;
@@ -738,7 +738,7 @@ ul.logos-list li:last-child {
   list-style: none;
   font-size: 16px;
   line-height: 40px;
-  color: #000;
+  color: #000
 }
 .about-us li {
   position: relative;
@@ -747,8 +747,7 @@ ul.logos-list li:last-child {
 .about-company .more-action::before,
 .about-us::before,
 .logistic-li::before {
-  position: absolute;
-  content: ""
+  position: absolute
 }
 .logistic-li::before {
   left: 0;
@@ -772,7 +771,7 @@ ul.logos-list li:last-child {
   top: -10px;
   background-color: #000;
   width: 80px;
-  height: 7px;
+  height: 7px
 }
 .about-company .more-action::before {
   left: -3px;
@@ -825,7 +824,6 @@ ul.logos-list li:last-child {
   margin-top: 51px
 }
 .about-contacts::before {
-  content: "";
   top: -10px;
   background-color: #000;
   position: absolute;
@@ -847,7 +845,7 @@ ul.logos-list li:last-child {
 }
 .write-pop-up {
   margin-top: 64px;
-  padding-left: 3px;
+  padding-left: 3px
 }
 .main-footer {
   margin: 0;
@@ -907,11 +905,13 @@ ul.logos-list li:last-child {
   opacity: .3
 }
 .footer-action {
-  left: 6px;
   top: -6px;
-  display: inline-flex;
-  width: 325px;
+  display: flex;
+  width: 315px;
   margin: 0;
+}
+.footer-user {
+  width: 470px;
 }
 .footer-mid li,
 ul.breadcrumbs li,
@@ -928,8 +928,8 @@ ul.footer-mid li {
   width: 13px;
   height: 13px;
   position: relative;
-  right: 15px;
-  top: -2px
+  right: 10px;
+  top: -3px;
 }
 .account-link-footer img {
   right: 9px
@@ -937,6 +937,12 @@ ul.footer-mid li {
 .footer-top a {
   font-weight: 100;
   color: rgba(255, 255, 255, .7)
+}
+.footer-top .enter {
+  margin-right: 17px;
+}
+.footer-top .exit {
+  opacity: 0.5;
 }
 .activity-button a:hover {
   color: #fff
@@ -1012,12 +1018,17 @@ ul.footer-bottom {
 .footer-bottom::after {
   bottom: 25px;
   background-color: #ffc600;
-  content: "";
   position: absolute;
   top: 169px;
   left: 0;
   width: 80px;
   height: 7px
+}
+.availability label,
+.color label {
+  left: -2px;
+  position: relative;
+  list-style: none
 }
 .activity-button {
   text-align: right
@@ -1043,8 +1054,8 @@ ul.footer-bottom {
 .social-button:last-child {
   margin: 0
 }
-.write-us-items input[type=text],
-.write-us-items input[type=email] {
+.write-us-items input[type=email],
+.write-us-items input[type=text] {
   text-transform: none;
   font-size: 14px;
   height: 50px;
@@ -1062,6 +1073,7 @@ ul.footer-bottom {
   background-color: #f2f2f2;
   border: 0 solid
 }
+.btn-transparent,
 .filter .title,
 .modal-login h2,
 .more-action-1,
@@ -1182,14 +1194,11 @@ ul.breadcrumbs {
   padding: 0 0 32px
 }
 .color label {
-  position: relative;
   top: 2px;
-  left: -2px;
   width: 40px;
   height: 40px;
   background: url(../img/checkbox-off.svg) 0 2px no-repeat;
   background-size: 23px;
-  list-style: none;
   padding-left: 40px
 }
 .form-legend {
@@ -1231,13 +1240,10 @@ ul.breadcrumbs {
   display: none
 }
 .availability label {
-  position: relative;
-  left: -2px;
   width: 40px;
   height: 40px;
   background: url(../img/radio-off.svg) 0 2px no-repeat;
   background-size: 24px;
-  list-style: none;
   padding-left: 40px
 }
 .filter-botton {
@@ -1276,7 +1282,8 @@ ul.breadcrumbs {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   padding-left: 0;
-  margin-right: 213px
+  margin-right: auto;
+  font-weight: 400
 }
 .sort .sort-level a {
   opacity: .3;
@@ -1298,6 +1305,11 @@ ul.sort-level li {
   left: -13px;
   opacity: .3
 }
+.arrows img:hover,
+.catalog-item .add-solve:hover,
+.catalog-item .more-action-1:active {
+  opacity: .5
+}
 .level-text a {
   color: #dbdbdb;
   font-weight: 100
@@ -1307,9 +1319,6 @@ ul.sort-level li {
 }
 .level-text:active {
   color: #000
-}
-.arrows img:hover {
-  opacity: .5
 }
 .arrows img:active {
   opacity: 1
@@ -1324,31 +1333,29 @@ ul.sort-level li {
 }
 .catalog-main {
   width: 760px;
-  margin-top: 69px
+  margin-top: 69px;
+  margin-bottom: 76px;
 }
 .catalog-list {
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 .catalog-item {
   width: 360px;
   margin-bottom: 17px;
-  margin-right: 20px
 }
 .catalog-item:nth-child(2n) {
-  margin-right: 0
+  margin-right: 0;
+  line-height: 30px;
 }
 .catalog-item:nth-child(2n) h3 {
-  width: 230px
+  width: 230px;
+  line-height: 29px;
 }
 .catalog-item a {
   color: #464646;
   width: 360px;
   height: 380px
-}
-.catalog-item .add-solve:hover,
-.catalog-item .more-action-1:active {
-  opacity: .5
 }
 .catalog-item h3 {
   font-size: 18px;
@@ -1379,13 +1386,12 @@ ul.sort-level li {
   border-radius: 50%
 }
 .navigation {
+  margin-top: -4px;
   width: 760px;
   height: 70px;
   background-color: #ebebeb;
-  margin-top: -8px;
-  margin-bottom: 77px;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 .navigation .back:hover,
 .navigation .next:hover {
@@ -1395,16 +1401,16 @@ ul.sort-level li {
   color: #000;
   font-weight: 700;
   font-size: 18px;
-  letter-spacing: 2px;
-  padding-top: 20px
+  letter-spacing: 3px;
+  padding-top: 20px;
 }
 .navigation a:hover {
   opacity: .3
 }
 .navigation .back,
 .navigation .next {
-  padding-right: 28px;
-  padding-left: 28px
+  padding-right: 24px;
+  padding-left: 28px;
 }
 .navigation-list li {
   list-style: none
@@ -1412,11 +1418,11 @@ ul.sort-level li {
 ul.navigation-list {
   margin: 0;
   padding-top: 20px;
-  font-size: 15px
+  font-size: 10px;
 }
 ul.navigation-list li {
   display: inline;
-  margin-right: 26px
+  margin-right: 25px;
 }
 .navigation-item a {
   color: #9c9c9c
@@ -1529,6 +1535,10 @@ ul.navigation-list li {
 .login-checkbox input[type=checkbox]:checked+.checkbox-indicator::before,
 .modal-close::before {
   transform: rotate(45deg)
+}
+.login-checkbox input[type=checkbox]:checked+.checkbox-indicator::after,
+.modal-close::after {
+  transform: rotate(-45deg)
 }
 .modal-close {
   z-index: 20;
@@ -1647,15 +1657,14 @@ ul.navigation-list li {
   opacity: 0;
   background-color: #efefef9c;
   position: absolute;
-  top: 70px;
+  top: 69px;
   width: 361px;
   height: 380px;
-  border-radius: 4px;
   -o-transition: opacity 80ms linear;
-  transition: opacity 80ms linear
+  transition: opacity 80ms linear;
 }
 .line-2 {
-  top: 575px
+  top: 572px;
 }
 .catalog-item-active:hover {
   opacity: 1;
@@ -1736,9 +1745,6 @@ ul.navigation-list li {
   height: 3px;
   background-color: #000
 }
-.modal-close::after {
-  transform: rotate(-45deg)
-}
 .modal-login h2 {
   margin: 0 0 30px;
   font-size: 20px;
@@ -1751,8 +1757,8 @@ ul.navigation-list li {
 .login-form p {
   margin: 0 0 30px
 }
-.login-form input[type=text],
-.login-form input[type=password] {
+.login-form input[type=password],
+.login-form input[type=text] {
   box-sizing: border-box;
   width: 300px;
   font: inherit;
@@ -1764,8 +1770,8 @@ ul.navigation-list li {
   border: none;
   outline: 0
 }
-.login-form input[type=text]:focus,
-.login-form input[type=password]:focus {
+.login-form input[type=password]:focus,
+.login-form input[type=text]:focus {
   background-color: #fff;
   border: 2px solid #f7e296;
   padding-top: 13px;
@@ -1818,9 +1824,6 @@ ul.navigation-list li {
   width: 15px;
   height: 2px;
   background-color: #000
-}
-.login-checkbox input[type=checkbox]:checked+.checkbox-indicator::after {
-  transform: rotate(-45deg)
 }
 .restore {
   color: #000;
@@ -1948,7 +1951,6 @@ ul.navigation-list li {
   font-size: 14px;
   line-height: 20px;
   color: #fff;
-  text-transform: uppercase;
   background: 0 0;
   border: 2px solid #fff;
   border-radius: 2px;
