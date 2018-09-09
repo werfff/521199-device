@@ -10,7 +10,7 @@
   <header class="container">
     <section class="main-header">
       <h2 class="visually-hidden">Раздел "Основное"</h2><!--<nav class="main-navigation">-->
-      <a class="main-header-logo" href="index.html">DEVICE</a>
+      <a class="main-header-logo" href="#">DEVICE</a>
       <div class="header-action">
         <form action="https://echo.htmlacademy.ru" class="header-search" method="post">
           <input class="search-form-field" name="search" placeholder="Поиск по сайту" type="search">
@@ -102,10 +102,6 @@
       <div class="container">
         <div class="slideshow-container">
           <div class="products">
-            <div class="slider-controls">
-              <label for="product-1">Первый</label> <label for="product-2">Второй</label>
-              <label for="product-3" style="margin-right: 14px;">Третий</label>
-            </div>
             <ul class="slides">
               <li class="slides-item" id="slide1">
                 <a class="slides-edit" href="product1.html"><img alt="Селфи палка" height="486" src="img/slider-1.png" width="384"></a>
@@ -115,23 +111,28 @@
                 <div class="product-description">
                   <h1 class="name-item">Делай селфи, как Бен Стиллер!</h1>
                   <p class="about-item">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                  <div class="slider-controls">
+                    <label for="product-1">Первый</label>
+                    <label for="product-2">Второй</label>
+                    <label for="product-3" style="margin-right: 14px;">Третий</label>
+                  </div>
                   <div class="more-button">
                     <a class="more-action" href="product1.html">Подробнее</a>
                   </div>
-                  <table class="info">
-                    <tbody>
-                      <tr>
-                        <td>8,5 м</td>
-                        <td>5 кг</td>
-                        <td>Карбон</td>
-                      </tr>
-                      <tr>
-                        <td><small>Длина палки</small></td>
-                        <td><small>Вес палки</small></td>
-                        <td><small>Материал</small></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <ul class="info">
+                    <li>
+                      <span class="upline">8,5 м</span>
+                      <span class="downline">Длина палки</span>
+                    </li>
+                    <li>
+                      <span class="upline">5 кг</span>
+                      <span class="downline">Вес палки</span>
+                    </li>
+                    <li>
+                      <span class="upline">Карбон</span>
+                      <span class="downline">Материал</span>
+                    </li>
+                  </ul>
                 </div>
               </li>
               <li class="slides-item" id="slide2">
@@ -144,19 +145,20 @@
                 <div class="product-description">
                   <h1 class="name-item">Худеем правильно!</h1>
                   <p class="about-item">Мотивирующий фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                  <div class="slider-controls">
+                    <label for="product-1">Первый</label>
+                    <label for="product-2">Второй</label>
+                    <label for="product-3" style="margin-right: 14px;">Третий</label>
+                  </div>
                   <div class="more-button">
                     <a class="more-action" href="product1.html">Подробнее</a>
                   </div>
-                  <table class="info">
-                    <tbody>
-                      <tr>
-                        <td>48 часов</td>
-                      </tr>
-                      <tr>
-                        <td><small>Без подзорядки</small></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <ul class="info">
+                    <li>
+                      <span class="upline">48 часов</span>
+                      <span class="downline">Без подзорядки</span>
+                    </li>
+                  </ul>
                 </div>
               </li>
               <li class="slides-item" id="slide3">
@@ -169,21 +171,24 @@
                 <div class="product-description">
                   <h1 class="name-item">Порхает как бабочка, жалит как пчела.</h1>
                   <p class="about-item">Это обычный, на перывый взгляд, квадракоптер оснащен мощным лазером замаскированным под стандартную камеру.</p>
+                  <div class="slider-controls">
+                    <label for="product-1">Первый</label>
+                    <label for="product-2">Второй</label>
+                    <label for="product-3" style="margin-right: 14px;">Третий</label>
+                  </div>
                   <div class="more-button">
                     <a class="more-action" href="product1.html">Подробнее</a>
                   </div>
-                  <table class="info">
-                    <tbody>
-                      <tr>
-                        <td>800 м</td>
-                        <td>50 м</td>
-                      </tr>
-                      <tr>
-                        <td><small>Дальность полета</small></td>
-                        <td><small>Радиус поражения</small></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <ul class="info">
+                    <li>
+                      <span class="upline">800 м</span>
+                      <span class="downline">Дальность полета</span>
+                    </li>
+                    <li>
+                      <span class="upline">50 м</span>
+                      <span class="downline">Радиус поражения</span>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>
@@ -247,7 +252,7 @@
       </div>
     </section>
     <section class="services">
-      <div class="container2">
+      <div class="container2 clearfix">
         <div class="services-name">
           <div class="more-button">
             <label class="more-action" for="services-1">Доставка</label>
@@ -255,20 +260,22 @@
             <label class="more-action" for="services-3">Кредит</label>
           </div>
         </div>
-        <div class="services-right" id="delivery">
+        <div class="services-right delivery" id="delivery">
+          <img alt="Доставка" height="164" src="img/delivery.svg" width="136">
           <h2 class="services-title">Доставка<!--ссылка на сервисы--></h2>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          <img alt="Доставка" height="164" src="img/delivery.svg" width="136">
         </div>
-        <div class="services-right" id="warranty">
-          <h2 class="services-title">Гарантия <!--ссылка на сервисы--></h2>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, коневно же.</p>
+        <div class="services-right warranty" id="warranty">
           <img alt="Гарантия" height="194" src="img/warranty.svg" width="171">
+          <h2 class="services-title">Гарантия <!--ссылка на сервисы--></h2>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит <br>
+            дом — не переживайте, мы выдадим вам новый.<br>
+            Товар, не дом, коневно же.</p>
         </div>
-        <div class="services-right" id="credit">
+        <div class="services-right credit" id="credit">
+          <img alt="Кредит" height="186" src="img/credit.svg" width="156">
           <h2 class="services-title">Кредит <!--ссылка на сервисы--></h2>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для вашего банка, разумеется.</p>
-          <img alt="Кредит" height="186" src="img/credit.svg" width="156">
         </div>
       </div>
     </section>
@@ -324,7 +331,7 @@
   <footer class="main-footer">
     <div class="container">
       <div class="footer-top">
-        <a class="main-footer-logo" href="index.html">DEVICE</a>
+        <a class="main-footer-logo" href="#">DEVICE</a>
         <ul class="footer-action">
           <li class="activity-button">
             <a class="account-link-footer" href="#">
@@ -419,6 +426,6 @@
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
-  <script src="js/script-min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

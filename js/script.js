@@ -37,20 +37,20 @@ link.addEventListener('click', function(a) {
             map_modal.classList.remove('modal-show')
     });
 
-var key_link = document.querySelector(".account-link");
+var key_link = document.querySelector('.account-link');
 
-var key_popup = document.querySelector(".modal-login");
-var key_close = key_popup.querySelector(".modal-close");
+var key_popup = document.querySelector('.modal-login');
+var key_close = key_popup.querySelector('.modal-close');
 
-var key_form = key_popup.querySelector("form");
-var key_login = key_popup.querySelector("[name=login]");
-var key_password = key_popup.querySelector("[name=password]");
+var key_form = key_popup.querySelector('form');
+var key_login = key_popup.querySelector('[name=login]');
+var key_password = key_popup.querySelector('[name=password]');
 
-var key_storage = localStorage.getItem("login");
+var key_storage = localStorage.getItem('login');
 
-key_link.addEventListener("click", function(evt) {
+key_link.addEventListener('click', function(evt) {
     evt.preventDefault();
-    key_popup.classList.add("modal-show");
+    key_popup.classList.add('modal-show');
     key_login.focus();
     if (storage) {
         key_login.value = storage;
@@ -59,29 +59,29 @@ key_link.addEventListener("click", function(evt) {
         key_login.focus();
     }
 });
-key_close.addEventListener("click", function(evt) {
+key_close.addEventListener('click', function(evt) {
     evt.preventDefault();
-    key_popup.classList.remove("modal-show");
-    key_popup.classList.remove("modal-error_2");
+    key_popup.classList.remove('modal-show');
+    key_popup.classList.remove('modal-error_2');
 });
 
-key_form.addEventListener("submit", function(evt) {
+key_form.addEventListener('submit', function(evt) {
     if (!key_login.value || !key_password.value) {
         evt.preventDefault();
-        key_popup.classList.remove("modal-error_2");
+        key_popup.classList.remove('modal-error_2');
         key_popup.offsetWidth = key_popup.offsetWidth;
-        console.log("Нужно ввести логин и пароль");
-        key_popup.classList.add("modal-error_2");
+        console.log('Нужно ввести логин и пароль');
+        key_popup.classList.add('modal-error_2');
     } else {
-        localStorage.setItem("login", key_login.value);
+        localStorage.setItem('login', key_login.value);
     }
 });
 
-window.addEventListener("keydown", function(evt) {
+window.addEventListener('keydown', function(evt) {
     if (evt.keyCode === 27) {
-        if (key_popup.classList.contains("modal-show")) {
-            key_popup.classList.remove("modal-show");
-            key_popup.classList.remove("modal-error_2");
+        if (key_popup.classList.contains('modal-show')) {
+            key_popup.classList.remove('modal-show');
+            key_popup.classList.remove('modal-error_2');
         }
     }
 });
