@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
 </head>
 <body>
   <header class="container">
@@ -38,7 +38,7 @@
                     <a href="vr.html">Вертуальная реальность</a>
                   </li>
                   <li>
-                    <a href="monopods.html">Моноподы для селфи</a>
+                    <a href="#">Моноподы для селфи</a>
                   </li>
                   <li>
                     <a href="acameras.html">Экшен камеры</a>
@@ -80,11 +80,11 @@
     </section>
   </header>
   <main class="main">
-    <input checked="" class="visually-hidden" id="sort-1" name="sort-radio" type="radio">
+    <!-- <input checked="" class="visually-hidden" id="sort-1" name="sort-radio" type="radio">
     <input class="visually-hidden" id="sort-2" name="sort-radio" type="radio">
     <input class="visually-hidden" id="sort-3" name="sort-radio" type="radio">
     <input class="visually-hidden" id="arrow-1" name="sort-arrow" type="radio">
-    <input checked="" class="visually-hidden" id="arrow-2" name="sort-arrow" type="radio">
+    <input checked="" class="visually-hidden" id="arrow-2" name="sort-arrow" type="radio"> -->
     <section class="catalog">
       <h2 class="visually-hidden">Раздел "Каталог"</h2>
       <section class="catalog-title">
@@ -99,7 +99,7 @@
               <a href="calatog.html">Каталог товаров</a>
             </li>
             <li class="breadcrumb">
-              <a href="monopod.html">Моноподы для селфи</a>
+              <a href="#">Моноподы для селфи</a>
             </li>
           </ul>
         </div>
@@ -108,6 +108,7 @@
         <div class="container">
           <h2 class="filter-tittle">Фильтр:</h2>
           <div class="sort">
+            <span class="visually-hidden">Сортировка:</span>
             <h2 class="sort-title">Сортировка:</h2>
             <div class="sort-level">
               <a class="level-text" href="#">По цене</a>
@@ -115,7 +116,7 @@
               <a class="level-text" href="#">По популярности</a>
             </div>
             <div class="arrows">
-              <h2 class="visually-hidden">Сортировка от большего к меньшему и от меньшего к большему</h2>
+              <span class="visually-hidden">Сортировка от большего к меньшему и от меньшего к большему</span>
               <a class="button button-up" href="#">
                 <img alt="up" height="12" src="img/icon-up-dir.svg" width="12">
               </a>
@@ -132,6 +133,7 @@
           <form action="https://echo.htmlacademy.ru" class="filter" method="post">
             <!-- <div class="filter-body-color"></div> -->
             <fieldset>
+              <span class="visually-hidden">Стоимость:</span>
               <legend class="form-legend">Стоимость</legend>
               <div class="range-controls">
                 <h2 class="visually-hidden">Стоимость</h2>
@@ -151,6 +153,7 @@
               </div>
             </fieldset>
             <fieldset class="color">
+              <span class="visually-hidden">Цвет:</span>
               <legend class="form-legend">Цвет</legend>
               <!--  -->
               <input checked="" class="visually-hidden" id="color-1" name="black" type="checkbox">
@@ -169,6 +172,7 @@
               <label class="color-name" for="color-5">Розовый</label>
             </fieldset>
             <fieldset class="bluetooth">
+              <span class="visually-hidden">Bluetooth:</span>
               <legend class="form-legend">Bluetooth</legend>
               <div class="availability">
                 <input checked="" class="visually-hidden" id="ava-1" name="ava-radio" type="radio" value="have">
