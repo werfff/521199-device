@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style-min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="container">
@@ -17,32 +17,20 @@
           <input name="submit" type="submit" value="Найти">
         </form>
         <div class="account-action">
-          <div class="account-login">
-            <img alt="Войти" height="12" src="img/user.svg" width="12">
-            <a class="enter" href="profile.html">
-              Валентин Петухов
-            </a>
+          <div class="account-login-in account-link-user">
+            <a class="enter" href="profile.html">Валентин Петухов</a>
             <a class="exit" href="logout.html">Выйти</a>
           </div>
           <div class="account-activity">
-            <a class="account-link" href="#">
-              <img alt="Сравнить" height="12" src="img/compare.svg" width="12">
-              Сравнить
-            </a>
-            <a class="account-link" href="#">
-              <img alt="Корзина" height="12" src="img/cart.svg" width="12">
-              Корзина
-            </a>
+            <a class="account-link account-link-compare" href="#">Сравнить</a>
+            <a class="account-link account-link-cart" href="#">Корзина</a>
           </div>
         </div>
-      </div><!--header-action is end-->
+      </div> <!--header-action is end-->
       <nav class="main-nav">
         <div class="catalog-menu">
           <div class="catalog-menu-heading">
             <a class="catalog-menu-link" href="#">Каталог товаров</a>
-            <button class="catalog-menu-toggle" type="button">
-              <img alt="+" height="17" src="img/plus.svg" width="17">
-            </button>
             <ul class="catalog-menu-dropdown">
               <li>
                 <ul class="catalog-menu-dropdown-menu first">
@@ -104,15 +92,13 @@
           <h2 class="page-title">Моноподы для селфи</h2>
           <ul class="breadcrumbs">
             <!--хлебные -->
-            <li>
+            <li class="breadcrumb">
               <a href="index.html">Главная</a>
             </li>
-            <li><img alt="" height="7" src="img/nav-arrow.svg" width="4"></li>
-            <li>
+            <li class="breadcrumb">
               <a href="calatog.html">Каталог товаров</a>
             </li>
-            <li><img alt="" height="7" src="img/nav-arrow.svg" width="4"></li>
-            <li>
+            <li class="breadcrumb">
               <a href="monopod.html">Моноподы для селфи</a>
             </li>
           </ul>
@@ -129,10 +115,11 @@
               <a class="level-text" href="#">По популярности</a>
             </div>
             <div class="arrows">
-              <a class="button" href="#">
+              <h2 class="visually-hidden">Сортировка от большего к меньшему и от меньшего к большему</h2>
+              <a class="button button-up" href="#">
                 <img alt="up" height="12" src="img/icon-up-dir.svg" width="12">
               </a>
-              <a class="button" href="#">
+              <a class="button button-down" href="#">
                 <img alt="down" height="12" src="img/icon-down-dir.svg" width="12">
               </a>
             </div>
@@ -147,6 +134,7 @@
             <fieldset>
               <legend class="form-legend">Стоимость</legend>
               <div class="range-controls">
+                <h2 class="visually-hidden">Стоимость</h2>
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
@@ -155,10 +143,10 @@
               </div>
               <div class="price-controls">
                 <label class="min-price">
-                  <input name="min-price" type="text" value="от 0">
+                  <input name="min-price" type="text" placeholder="от 0">
                 </label>
                 <label class="max-price">
-                  <input name="max-price" type="text" value="до 5000">
+                  <input name="max-price" type="text" placeholder="до 5000">
                 </label>
               </div>
             </fieldset>
@@ -184,11 +172,12 @@
               <legend class="form-legend">Bluetooth</legend>
               <div class="availability">
                 <input checked="" class="visually-hidden" id="ava-1" name="ava-radio" type="radio" value="have">
-                <input class="visually-hidden" id="ava-2" name="ava-radio" type="radio" value="don′t have">
+                <input class="visually-hidden" id="ava-2" name="ava-radio" type="radio" value="doesn′t have">
                 <label class="ava-radio" for="ava-1">Есть</label>
                 <label class="ava-radio" for="ava-2">Нет</label>
               </div>
-            </fieldset><button class="filter-botton more-action" type="submit">Показать</button>
+            </fieldset>
+            <button class="filter-button more-action" type="submit">Показать</button>
           </form>
           <section class="catalog-main">
             <h2 class="visually-hidden">Список товаров</h2>
@@ -260,7 +249,8 @@
                 <li class="navigation-item">
                   <a href="#">3</a>
                 </li>
-              </ul><a class="next" href="#">Вперед</a>
+              </ul>
+              <a class="next" href="#">Вперед</a>
             </div>
           </section>
         </div>
@@ -274,18 +264,15 @@
         <ul class="footer-action footer-user">
           <li class="activity-button">
             <div class="account-login">
-              <img alt="Войти" height="12" src="img/user-color.svg" width="12">
-              <a class="enter" href="profile.html">
-                Валентин Петухов
-              </a>
+              <a class="enter" href="profile.html">Валентин Петухов</a>
               <a class="exit" href="logout.html">Выйти</a>
             </div>
           </li>
           <li class="activity-button">
-            <a class="compare-button" href="#"><img alt="Сравнить" height="12" src="img/compare-color.svg" width="12">Сравнить</a>
+            <a class="compare-button" href="#">Сравнить</a>
           </li>
           <li class="activity-button">
-            <a class="button basket-button" href="#"><img alt="Корзина" height="12" src="img/cart-color.svg" width="12">Корзина</a>
+            <a class="button basket-button" href="#">Корзина</a>
           </li>
         </ul>
       </div>
@@ -321,7 +308,7 @@
             </a>
           </li>
         </ul>
-        <a class="htmlacademy" href="https://htmlacademy.ru">
+        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
           <img alt="htmlacademy" height="37" src="img/logo-html.svg" width="27">
         </a>
       </div>
@@ -350,6 +337,5 @@
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
-  <script src="js/script-min.js"></script>
 </body>
 </html>

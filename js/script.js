@@ -1,13 +1,13 @@
 var link = document.querySelector('.write-pop-up'),
     popup = document.querySelector('.write-popup'),
-    popup_close = popup.querySelector('.popup-close-botton'),
+    popup_close = popup.querySelector('.popup-close-button'),
     form = popup.querySelector('.form-write-us'),
     nickname = popup.querySelector('[name=name]'),
     email = popup.querySelector('[name=email]'),
     letter = popup.querySelector('[name=letter]'),
     map_link = document.querySelector('.map'),
     map_modal = document.querySelector('.map-popup'),
-    map_close = map_modal.querySelector('.popup-close-botton'),
+    map_close = map_modal.querySelector('.popup-close-button'),
     storage_name = localStorage.getItem('name'),
     storage_email = localStorage.getItem('email');
 link.addEventListener('click', function(a) {
@@ -26,7 +26,9 @@ link.addEventListener('click', function(a) {
         map_modal.classList.contains('modal-show') && map_modal.classList.remove('modal-show'))
     }),
     form.addEventListener('submit', function(a) {
-        nickname.value && email.value && letter.value ? (localStorage.setItem('name', nickname.value), localStorage.setItem('email', email.value)) : (a.preventDefault(), popup.classList.remove('modal-error'), popup.offsetWidth = popup.offsetWidth, popup.classList.add('modal-error'))
+        nickname.value && email.value && letter.value ? (localStorage.setItem('name', nickname.value),
+        localStorage.setItem('email', email.value)) : (a.preventDefault(), popup.classList.remove('modal-error'),
+        popup.offsetWidth = popup.offsetWidth, popup.classList.add('modal-error'))
     }),
     map_link.addEventListener('click', function(a) {
         a.preventDefault(),

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link href="css/style-min.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
 </head>
 <body>
   <header class="container">
@@ -18,20 +18,11 @@
         </form>
         <div class="account-action">
           <div class="account-login">
-            <a class="account-link" href="key.html">
-              <img alt="Войти" height="12" src="img/user.svg" width="12">
-              Войти
-            </a>
+            <a class="account-link account-link-user" href="key.html">Войти</a>
           </div>
           <div class="account-activity">
-            <a class="account-link" href="#">
-              <img alt="Сравнить" height="12" src="img/compare.svg" width="12">
-              Сравнить
-            </a>
-            <a class="account-link" href="#">
-              <img alt="Корзина" height="12" src="img/cart.svg" width="12">
-              Корзина
-            </a>
+            <a class="account-link account-link-compare" href="#">Сравнить</a>
+            <a class="account-link account-link-cart" href="#">Корзина</a>
           </div>
         </div>
       </div><!--header-action is end-->
@@ -39,9 +30,6 @@
         <div class="catalog-menu">
           <div class="catalog-menu-heading">
             <a class="catalog-menu-link" href="#">Каталог товаров</a>
-            <button class="catalog-menu-toggle" type="button">
-              <img alt="+" height="17" src="img/plus.svg" width="17">
-            </button>
             <ul class="catalog-menu-dropdown">
               <li>
                 <ul class="catalog-menu-dropdown-menu first">
@@ -213,7 +201,8 @@
               <div class="popular-item-box">
                 <img alt="Моноподы для селфи" height="100" src="img/popular-2.svg" width="100">
               </div>
-              <p class="popular-item-text">Моноподы <br>для селфи</p>
+              <p class="popular-item-text">Моноподы </p>
+              <p class="popular-item-text">для селфи</p>
             </a>
           </li>
           <li class="popular-item">
@@ -255,9 +244,9 @@
       <div class="container2 clearfix">
         <div class="services-name">
           <div class="more-button">
-            <label class="more-action" for="services-1">Доставка</label>
-            <label class="more-action" for="services-2">Гарантия</label>
-            <label class="more-action" for="services-3">Кредит</label>
+            <label class="more-action" id="delivery1" for="services-1">Доставка</label>
+            <label class="more-action" id="warranty1" for="services-2">Гарантия</label>
+            <label class="more-action" id="credit1" for="services-3">Кредит</label>
           </div>
         </div>
         <div class="services-right delivery" id="delivery">
@@ -268,14 +257,16 @@
         <div class="services-right warranty" id="warranty">
           <img alt="Гарантия" height="194" src="img/warranty.svg" width="171">
           <h2 class="services-title">Гарантия <!--ссылка на сервисы--></h2>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит <br>
-            дом — не переживайте, мы выдадим вам новый.<br>
-            Товар, не дом, коневно же.</p>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит</p>
+          <p>дом — не переживайте, мы выдадим вам новый.</p>
+          <p>Товар, не дом, коневно же.</p>
         </div>
         <div class="services-right credit" id="credit">
           <img alt="Кредит" height="186" src="img/credit.svg" width="156">
           <h2 class="services-title">Кредит <!--ссылка на сервисы--></h2>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для вашего банка, разумеется.</p>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты
+            подберут для вас наиболее выгодные условия кредита. Выгодные для
+            вашего банка, разумеется.</p>
         </div>
       </div>
     </section>
@@ -334,20 +325,13 @@
         <a class="main-footer-logo" href="#">DEVICE</a>
         <ul class="footer-action">
           <li class="activity-button">
-            <a class="account-link-footer" href="#">
-              <img alt="Войти" height="12" src="img/user-color.svg" width="12">
-              Войти
-            </a>
+            <a class="account-link-footer" href="#">Войти</a>
           </li>
           <li class="activity-button">
-            <a class="compare-button" href="#"><img alt="Сравнить" height="12" src="img/compare-color.svg" width="12">
-              Сравнить
-            </a>
+            <a class="compare-button" href="#">Сравнить</a>
           </li>
           <li class="activity-button">
-            <a class="button basket-button" href="#"><img alt="Корзина" height="12" src="img/cart-color.svg" width="12">
-              Корзина
-            </a>
+            <a class="button basket-button" href="#">Корзина</a>
           </li>
         </ul>
       </div>
@@ -355,13 +339,13 @@
         <span>г. Москва, ул. Строителей, 15</span>
         <ul class="footer-mid-services">
           <li class="services-button">
-            <a>Доставка</a>
+            <a href="#delivery1">Доставка</a>
           </li>
           <li class="services-button">
-            <a>Гарантия</a>
+            <a href="#warranty1">Гарантия</a>
           </li>
           <li class="services-button">
-            <a>Контакты</a>
+            <a href="#credit1">Контакты</a>
           </li>
         </ul>
         <a class="contact-item" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
@@ -378,7 +362,9 @@
             <a class="social-button" href="#"><img alt="Твиттер" height="32" src="img/twitter.svg" width="32"></a>
           </li>
         </ul>
-        <a class="htmlacademy" href="https://htmlacademy.ru"><img alt="htmlacademy" height="37" src="img/logo-html.svg" width="27"></a>
+        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img alt="htmlacademy" height="37" src="img/logo-html.svg" width="27">
+        </a>
       </div>
     </div>
   </footer>
@@ -387,16 +373,17 @@
     <div class="map-popup-content">
       <iframe allowfullscreen height="559" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488834914!2d37.5274239515592!3d55.6870309804403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sus!4v1522810672856" width="960"></iframe>
       <!-- <img src="img/map-big.jpg" alt="Офис компании по адресу ул.Строителей дом 15, Москва." height="559" width="960"> -->
-       <button class="popup-close-botton" type="button">
+       <button class="popup-close-button" type="button">
+         <h2 class="visually-hidden">Закрыть карту</h2>
          <img alt="x" height="55" src="img/modal-close.svg" width="55">
        </button>
     </div>
   </section>
   <section class="write-popup">
-    <button class="popup-close-botton" type="button"><img alt="x" height="55" src="img/modal-close.svg" width="55"></button>
+    <button class="popup-close-button" type="button"><img alt="x" height="55" src="img/modal-close.svg" width="55"></button>
     <form action="https://echo.htmlacademy.ru" class="form-write-us" method="post">
-      <label class="form-write-us-name">Ваше имя: <input name="name" placeholder="Представтесь, пожалуйста" type="text"></label>
-      <label class="form-write-us-email">Ваш e-mail: <input name="email" placeholder="Для отправки ответа" type="text"></label>
+      <label class="form-write-us-name">Ваше имя: <input name="name" placeholder="Имя Фамилия" type="name"></label>
+      <label class="form-write-us-email">Ваш e-mail: <input name="email" placeholder="email@exampl.com" type="email"></label>
       <label class="form-write-us-letter">Текст письма:
         <textarea name="letter" placeholder="В свободной форме"></textarea>
       </label>
@@ -426,6 +413,6 @@
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
-  <script src="js/script.js"></script>
+  <script src="js/script-min.js"></script>
 </body>
 </html>
