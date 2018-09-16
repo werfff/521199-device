@@ -69,7 +69,7 @@
   top: 4px;
   width: 283px;
   height: 83%;
-  background-color: #000
+  background-color: #000000
 }
 
 #product-1:checked~.slider-controls .product-1::before,
@@ -95,7 +95,7 @@ body {
   line-height: 30px;
   font-size: 15px;
   font-weight: 700;
-  color: #000;
+  color: #000000;
   background-color: #fff;
   min-width: 1160px
 }
@@ -104,7 +104,7 @@ body {
 .header-search input[type=search],
 .header-search input[type=submit],
 a {
-  color: #000;
+  color: #000000;
   text-decoration: none
 }
 
@@ -180,7 +180,7 @@ a.main-header-logo {
   min-width: 138px;
   margin-bottom: 16px;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
   font-size: 18px;
   letter-spacing: 3.6px;
   text-align: center
@@ -259,7 +259,7 @@ a.main-header-logo {
   left: 57px;
   vertical-align: middle;
   font-size: 48px;
-  color: #000;
+  color: #000000;
   letter-spacing: .01em
 }
 
@@ -318,7 +318,7 @@ a.main-header-logo {
 }
 
 .header-search input[type=search]:focus {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000000;
   outline: 0;
   opacity: 1
 }
@@ -342,7 +342,7 @@ a.main-header-logo {
   position: relative;
   top: 0;
   margin-left: -4px;
-  border: 2px solid #000;
+  border: 2px solid #000000;
   outline: 0;
   cursor: pointer;
   font-family: "Open Sans", Arial, sans-serif
@@ -350,13 +350,13 @@ a.main-header-logo {
 
 .header-search input[type=submit]:hover {
   color: #fff;
-  background-color: #000;
+  background-color: #000000;
   opacity: 1
 }
 
 .header-search input[type=submit]:active {
   color: #4d4d4d;
-  background-color: #000;
+  background-color: #000000;
   opacity: 1
 }
 
@@ -383,7 +383,7 @@ a.main-header-logo {
 .account-action {
   position: relative;
   text-transform: none;
-  color: #000;
+  color: #000000;
   font-weight: 300;
   width: 477px;
   display: flex;
@@ -411,7 +411,7 @@ a.main-header-logo {
 }
 
 .account-action a {
-  color: #000;
+  color: #000000;
   letter-spacing: .012em;
   font-weight: 300
 }
@@ -645,7 +645,7 @@ _:-ms-fullscreen,
 }
 
 .slides {
-  color: #000;
+  color: #000000;
   list-style: none;
   padding: 0;
   margin: 0
@@ -710,12 +710,12 @@ _:-ms-fullscreen,
 }
 
 .name-item {
-  color: #000;
+  color: #000000;
   margin-bottom: 0
 }
 
 .services-title {
-  color: #000;
+  color: #000000;
   margin-bottom: 25px;
   position: relative;
   right: 44px;
@@ -823,7 +823,7 @@ _:-ms-fullscreen,
 }
 
 .popular-item-text {
-  color: #000;
+  color: #000000;
   display: block;
   vertical-align: top;
   letter-spacing: .09px;
@@ -878,7 +878,7 @@ _:-ms-fullscreen,
 }
 
 .services-name {
-  color: #000;
+  color: #000000;
   list-style: none;
   text-transform: uppercase;
   position: relative;
@@ -894,7 +894,7 @@ _:-ms-fullscreen,
   display: block;
   width: 7px;
   height: 319px;
-  background-color: #000;
+  background-color: #000000;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%)
@@ -916,7 +916,7 @@ _:-ms-fullscreen,
 }
 
 .services-name a {
-  color: #000
+  color: #000000
 }
 
 .services-name a:active {
@@ -1005,7 +1005,7 @@ _:-ms-fullscreen,
   list-style: none;
   font-size: 16px;
   line-height: 40px;
-  color: #000
+  color: #000000
 }
 
 _:-ms-fullscreen,
@@ -1016,7 +1016,7 @@ _:-ms-fullscreen,
   list-style: none;
   font-size: 16px;
   line-height: 40px;
-  color: #000
+  color: #000000
 }
 
 .about-us li {
@@ -1044,7 +1044,7 @@ _:-ms-fullscreen,
 }
 
 .about-us a {
-  color: #000;
+  color: #000000;
   font-size: 18px
 }
 
@@ -1054,7 +1054,7 @@ _:-ms-fullscreen,
 
 .about-us::before {
   top: -10px;
-  background-color: #000;
+  background-color: #000000;
   width: 80px;
   height: 7px
 }
@@ -1125,7 +1125,7 @@ _:-ms-fullscreen,
 
 .about-contacts::before {
   top: -10px;
-  background-color: #000;
+  background-color: #000000;
   position: absolute;
   width: 80px;
   height: 7px
@@ -1138,7 +1138,7 @@ _:-ms-fullscreen,
 
 .map button {
   text-transform: none;
-  background-color: #000;
+  background-color: #000000;
   opacity: .5;
   border: 0
 }
@@ -1470,7 +1470,7 @@ ul.footer-bottom {
   font-size: 14px;
   height: 50px;
   width: 360px;
-  color: #000;
+  color: #000000;
   background-color: #f2f2f2;
   border: 0 solid
 }
@@ -1479,7 +1479,7 @@ ul.footer-bottom {
   text-transform: none;
   height: 156px;
   width: 760px;
-  color: #000;
+  color: #000000;
   font-size: 14px;
   background-color: #f2f2f2;
   border: 0 solid
@@ -1580,7 +1580,7 @@ ul.footer-bottom {
   margin-left: 60px;
   letter-spacing: .012em;
   font-size: 47px;
-  color: #000
+  color: #000000
 }
 
 .breadcrumbs {
@@ -1664,7 +1664,7 @@ ul.breadcrumbs li {
   padding-right: 68px;
   margin-left: 60px;
   font-size: 14px;
-  color: #000
+  color: #000000
 }
 
 .color,
@@ -1717,8 +1717,8 @@ _:-ms-fullscreen,
   font-size: 18px;
   font-family: Gilroy, Verdana, sans-serif;
   font-weight: 700;
-  color: #000;
-  border-top: 2px solid #000
+  color: #000000;
+  border-top: 2px solid #000000
 }
 
 .bluetooth .have-not,
@@ -1827,7 +1827,7 @@ _:-ms-fullscreen,
 }
 
 .level-text {
-  color: #000;
+  color: #000000;
   font-weight: 700
 }
 
@@ -1836,7 +1836,7 @@ _:-ms-fullscreen,
 }
 
 .level-text:active {
-  color: #000
+  color: #000000
 }
 
 .arrows .button-up:active,
@@ -1947,7 +1947,7 @@ _:-ms-fullscreen,
 }
 
 .navigation a {
-  color: #000;
+  color: #000000;
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 4px;
@@ -2305,7 +2305,7 @@ _:-ms-fullscreen,
 }
 
 .more-action-1 {
-  color: #000;
+  color: #000000;
   letter-spacing: 4px
 }
 
@@ -2352,7 +2352,7 @@ _:-ms-fullscreen,
 .modal {
   position: fixed;
   display: none;
-  color: #000;
+  color: #000000;
   z-index: 10;
   background-color: #fff;
   background-position: 0 0;
@@ -2395,7 +2395,7 @@ _:-ms-fullscreen,
   left: 2px;
   width: 19px;
   height: 3px;
-  background-color: #000
+  background-color: #000000
 }
 
 .modal-login h2 {
@@ -2481,7 +2481,7 @@ _:-ms-fullscreen,
   left: 0;
   width: 17px;
   height: 17px;
-  border: 2px solid #000
+  border: 2px solid #000000
 }
 
 .login-checkbox input[type=checkbox]:focus+.checkbox-indicator {
@@ -2498,11 +2498,11 @@ _:-ms-fullscreen,
   left: 1px;
   width: 15px;
   height: 2px;
-  background-color: #000
+  background-color: #000000
 }
 
 .restore {
-  color: #000;
+  color: #000000;
   text-decoration: underline
 }
 
@@ -2564,7 +2564,7 @@ _:-ms-fullscreen,
 
 .filter-range {
   width: 200px;
-  color: #000
+  color: #000000
 }
 
 .filter-range-title {
@@ -2676,7 +2676,7 @@ _:-ms-fullscreen,
 }
 
 .btn-transparent:hover {
-  color: #000;
+  color: #000000;
   background: #fff
 }
 
@@ -2842,7 +2842,7 @@ _:-ms-fullscreen,
   font-size: 14px;
   line-height: 18px;
   font-family: "Open Sans", Arial, sans-serif;
-  color: #000;
+  color: #000000;
   white-space: nowrap;
   opacity: .3
 }
